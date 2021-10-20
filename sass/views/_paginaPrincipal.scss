@@ -1,0 +1,359 @@
+@import "../utilities/variables"; 
+
+
+    .section1-slider {
+        &__imagen{
+            height: 35rem;
+            
+        }
+        @include tablet {
+             &__imagen {
+                width: 100%;
+             }
+        }
+    }
+    .section2{
+        &__ingresar {
+            margin-left: 40rem;
+        }
+        section {
+            padding: 60px 0;
+            min-height: 100vh;
+            background-color: $grisclaro;
+        }
+
+        .sec-title {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .sec-title.small {
+            margin-bottom: 35px;
+        }
+
+        .sec-title h1 {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 50px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            color: $colorfondo;
+        }
+
+        .sec-title h1:before {
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            width: 60px;
+            height: 2px;
+            content: "";
+            background:$colorfondo;
+        }
+
+        .sec-title h1:after {
+            position: absolute;
+            left: 20px;
+            bottom: 0px;
+            width: 60px;
+            height: 2px;
+            content: "";
+            background: $colorfondo;
+        }
+
+        .sec-title.centered h1:after,
+        .sec-title.centered h1:before {
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .sec-title.light h1 {
+            color: #fff;
+        }
+
+        .sec-title h3 {
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .sec-title.light h3 {
+            color: #fff;
+        }
+
+        .sec-title.light .text {
+            color: #fff;
+        }
+
+        .sec-title.centered {
+            text-align: center;
+        }
+
+        .sec-title .text {
+            margin-top: 15px;
+            color: $grisclaro;
+            max-width: 960px;
+        }
+
+        .sec-title.centered .text {
+            margin: 0 auto;
+        }
+
+        .sec-title.style-two {
+            margin-bottom: 40px;
+        }
+
+
+        .working-process-step {
+            position: relative;
+        }
+
+        .working-process-step:before {
+            content: '';
+            position: absolute;
+            left: -0;
+            right: -0;
+            height: 100%;
+            display: block;
+            background: url() center center no-repeat;
+        }
+
+        .working-process .row {
+            margin: 0 -65px;
+        }
+
+        .process-block {
+            position: relative;
+            margin-bottom: 40px;
+            padding: 0 65px;
+        }
+
+        .process-block .inner-box {
+            position: relative;
+            padding: 50px 35px 33px;
+            box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1);
+            transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            background-color: #ffffff;
+            text-align: center;
+            transition: .5s ease;
+        }
+
+        .process-block .inner-box:hover {
+            box-shadow: 0px -10px 39px 0px rgba(8, 18, 109, 0.1);
+            transform: translateY(-10px);
+        }
+
+        .process-block:nth-child(2) .inner-box {
+            margin-top: 70px;
+        }
+
+        .process-block .inner-box .count-box {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background: $colorfondo;
+            margin: 0 auto;
+            color: #ffffff;
+            text-align: center;
+            line-height: 80px;
+            font-size: 30px;
+            font-weight: 800;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        .process-block .inner-box h3 {
+            position: relative;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .process-block .inner-box .text {
+            position: relative;
+            color: #777777;
+            font-size: 14px;
+            line-height: 1.8em;
+            margin-bottom: 18px;
+            transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+        }
+
+        @keyframes float-bob-y {
+            0% {
+                -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+
+            50% {
+                -webkit-transform: translateY(-1px);
+                transform: translateY(-10px);
+            }
+
+            100% {
+                -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+            }
+        }
+
+        .float-bob-y {
+            animation-name: float-bob-y;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            -webkit-animation-name: float-bob-y;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+
+            -moz-animation-name: float-bob-y;
+            -moz-animation-duration: 2s;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: linear;
+
+            -ms-animation-name: float-bob-y;
+            -ms-animation-duration: 2s;
+            -ms-animation-iteration-count: infinite;
+            -ms-animation-timing-function: linear;
+
+            -o-animation-name: float-bob-y;
+            -o-animation-duration: 2s;
+            -o-animation-iteration-count: infinite;
+            -o-animation-timing-function: linear;
+        }
+
+         @include tablet {
+             .section2-pasos {
+                 width: auto;
+                 height: auto;
+             }
+               .ingresar {
+                   margin-left: 10rem;
+               }
+         }
+        }
+
+         
+    .section3-testimonios {
+        margin-top: 10rem;
+        width: 100%;
+        height: auto;
+
+        &__titulo {
+            color: $colorletra;
+            text-align: start;
+        }
+
+        &__testimonios {
+            padding-left: 10rem;
+            width: 100%;
+            margin: auto;
+            overflow: hidden; 
+            background-color: $grisclaro;
+        }
+
+        &__testimoniosUl {
+            display: flex;
+            padding: 0;
+            width: 400%;
+            animation: cambio 15s infinite;
+            animation-timing-function: ease-in;
+        }
+
+        &__testimoniosLi {
+            width: 100%;
+            list-style: none;
+        }
+
+        &__imagen {
+            width: 60%;
+            height: auto;
+            padding: 30px;
+            margin-left: 10rem;
+        }
+
+        @keyframes cambio {
+            0% {
+                margin-left: 0;
+            }
+
+            34% {
+                margin-left: 0;
+            }
+
+            35% {
+                margin-left: -100%;
+            }
+
+            65% {
+                margin-left: -100%;
+            }
+
+            66% {
+                margin-left: -200%;
+            }
+
+            100% {
+                margin-left: -200%;
+            }
+        }
+
+        @include tablet {
+            .section3-testimonios {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+
+
+    .section4-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+           .typing-demo {
+            width: 100%;
+            animation: typing 2s steps(22), blink .5s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: poppins;
+            font-size: 3rem;
+            color: $colorletra;
+            margin-top: 7rem;           
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+         @include tablet {
+             .section4-wrapper {
+                display: flex;
+                flex-direction: column;
+             }
+
+             .section4-wrapper__imagen{
+                 margin-left: 10rem;
+             }
+         }
+    }
+

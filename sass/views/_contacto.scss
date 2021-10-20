@@ -1,0 +1,51 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+  .section1-contacto {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: $colorfondo;
+      
+      &__imagen {
+      height: 40rem;
+      width: 40rem;
+    }
+      &__formulario {
+        margin: 10% 10% 10% 0;
+        background-color: $grisclaro;
+        height: 50%;
+    }
+
+    .inputcaja {
+        color: $colorletra;
+        padding: 10px;
+    }
+
+    .textarea {
+        margin-left: 12px;
+        height: 200px;
+        width: 420px;
+    }
+
+    .tituloContacto {
+        margin-left: 25%;
+        color: $colorletra;
+    }
+
+    .recaptcha {
+        margin-left: 12px;
+    }
+
+    .g-recaptcha {
+        margin-bottom: 15px;
+    }
+
+    @include tablet {
+        .section1-contacto {
+        display: flex;
+        flex-direction: column;
+        }
+    }
+  }

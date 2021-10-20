@@ -1,0 +1,27 @@
+  @import "../utilities/variables";
+
+  .footer {
+      position: block;
+      text-align: center;
+      background-color: $colorfondo;
+  
+        &__redeSociales {
+           background-color: $grisclaro;
+        }
+        
+        &__imagen {
+        padding-top: 3px;
+        width: 40px;
+        height: 40px;
+        }
+
+        &__copy{
+          color: $colorletra;
+        }
+
+        &__logo{
+          width: auto;
+          height: 3rem;
+        }
+
+    }

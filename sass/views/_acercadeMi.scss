@@ -1,0 +1,35 @@
+@import "../utilities/variables";
+
+main{
+  margin-top: 5rem;
+
+  .section1-acerca {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: $grisclaro;
+   
+        &__imagen {
+            height: auto;
+            width: 25rem;
+            margin: 6rem 4rem 4rem 4rem;
+        }
+
+        &__texto {  
+            text-align: justify;
+            color: $colorletra;
+            margin: 6rem;
+            padding: 4rem;
+        }
+  }
+
+  @include tablet{
+      .section1-acerca {
+          display: flex;
+          flex-direction: column;
+        }
+         &__texto {
+            font-size: 3rem;
+         }
+  }
+}

@@ -1,0 +1,125 @@
+@import "../utilities/variables";
+
+  .section1 {
+      &__como {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      }
+  
+        &__imagenQuienes {
+        margin-top: 5rem;
+        margin-left: 10%;
+        width: 45%;
+        }
+        &__textoQuienes1 {
+        margin-top: 15%;
+        margin-right: 10%;
+        text-align: justify;
+        color: #F2F2F2;
+        }
+  }
+
+  
+  .section2-importancia {
+    height: auto;
+    &__textoQuienes2 {
+      text-align: justify;
+      text-align: center;
+      color: $colorletra;
+      background-color: $grisclaro;
+    }
+
+}
+
+
+  .section3 {
+   .box-container {
+     display: flex;
+     width: 100%;
+     height: 100vh;
+     flex-flow: row nowrap;
+     justify-content: center;
+     align-items: center;
+     background:$grisclaro;
+   }
+
+   .box-container .card {
+     position: relative;
+     width: 300px;
+     height: 400px;
+     border-radius: 10px;
+     overflow: hidden;
+     background: #f5f6fa;
+     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+   }
+
+  
+
+   .box-container .card:hover {
+     /*%% Card on hover %%*/
+   }
+
+   .box-container .card:hover:before {
+     height: 180px;
+   }
+
+   .box-container .card:hover .social {
+     margin-top: 50px;
+   }
+
+   .box-container .card:hover .pic {
+     width: 120px;
+     height: 120px;
+     margin-top: 50px;
+     box-shadow: 0px 0px 10px 1px #888;
+   }
+
+   .box-container .card:hover .content {
+     margin-top: 90px;
+   }
+
+   .box-container .card .pic {
+     position: relative;
+     left: 50%;
+     top: 15%;
+     transform: translateX(-50%);
+     width: 140px;
+     height: 140px;
+     overflow: hidden;
+     transition: all 0.5s ease;
+     border-radius: 50%;
+     background: #fff;
+     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+   }
+
+   .box-container .card .pic img {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+   }
+
+   .box-container .card .content {
+     margin-top: 90px;
+     text-align: center;
+     padding: 0 30px;
+     color: #2d3436;
+     transition: margin-top 0.5s ease;
+   }
+
+   .box-container .card .content .title {
+     margin-bottom: 0;
+     font-family: 'Yantramanav', sans-serif;
+     font-size: 22px;
+   }
+
+      
+
+     }
+ 
+     
+.section4-ruleta{
+  &__titulo{
+    color: $colorletra;
+  }
+}

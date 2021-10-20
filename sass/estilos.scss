@@ -1,0 +1,36 @@
+  /*Font de la página*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+    /*Generalidades de la página*/
+    @import "./base/reset";
+
+    /*Utilities*/
+    @import "./utilities/variables";
+    @import "./utilities/mixins";
+    @import "./utilities/tipografia";
+
+
+    /*Header y Footer*/
+    @import "./layout/_header";
+    @import "./layout/_grids";
+    @import "./layout/_footer";
+    @import "./layout/body";
+
+    /*Themes*/
+    @import "./themas/404page";
+  
+
+    /*secciones*/
+    @import "./views/paginaPrincipal";
+    @import "./views/acercadeMi";
+    @import "./views/contacto";
+    @import "./views/ingresar";
+    @import "./views/quienesPuedenhacerTerapia";
+    @import "./views/comoPuedoayudarte"
+    
+
+
+
+ 
+
+  
