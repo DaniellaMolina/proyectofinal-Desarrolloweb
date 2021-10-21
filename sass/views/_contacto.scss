@@ -20,13 +20,13 @@
 
     .inputcaja {
         color: $colorletra;
-        padding: 10px;
+        padding: 0.625rem;
     }
 
     .textarea {
-        margin-left: 12px;
-        height: 200px;
-        width: 420px;
+        margin-left: 0.75rem;
+        height: 12.5rem;
+        width: 26.25rem;
     }
 
     .tituloContacto {
@@ -35,11 +35,11 @@
     }
 
     .recaptcha {
-        margin-left: 12px;
+        margin-left: 0.75rem;
     }
 
     .g-recaptcha {
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
     }
 
     @include tablet {

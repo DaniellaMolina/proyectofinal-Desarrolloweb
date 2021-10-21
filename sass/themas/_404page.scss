@@ -1,6 +1,8 @@
 .page_404{ 
-    padding:40px 0; 
+    padding:2.5rem 0; 
     background: white; 
+    display: flex;
+    justify-content: center;
 }
 
 .page_404  img{ 
@@ -8,26 +10,26 @@
 }
 
 .four_zero_four_bg{
-    background-image:url (cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-    height: 400px;
+    background-image:url("/imagenes/404.gif");
+    height: 25rem;
     background-position: center;
  }
  
  
  .four_zero_four_bg h1{
- font-size:80px;
+ font-size:5rem;
  }
  
   .four_zero_four_bg h3{
-    font-size:80px;
+    font-size:5rem;
     }
 			 
     .link_404{			 
 	color: #fff!important;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background: #39ac31;
-    margin: 20px 0;
+    margin: 1.25rem 0;
     display: inline-block;
 }
 	.contant_box_404{ 
-        margin-top:-50px;}
+        margin-top:-3.125rem;}

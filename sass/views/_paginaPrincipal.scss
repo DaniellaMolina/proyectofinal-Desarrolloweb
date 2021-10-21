@@ -17,45 +17,45 @@
             margin-left: 40rem;
         }
         section {
-            padding: 60px 0;
+            padding: 3.75rem 0;
             min-height: 100vh;
             background-color: $grisclaro;
         }
 
         .sec-title {
             position: relative;
-            margin-bottom: 50px;
+            margin-bottom: 3.125rem;
         }
 
         .sec-title.small {
-            margin-bottom: 35px;
+            margin-bottom: 2.1875rem;
         }
 
         .sec-title h1 {
-            font-size: 40px;
+            font-size: 2.5rem;
             font-weight: 800;
-            line-height: 50px;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
+            line-height: 3.125rem;
+            padding-bottom: 1.875rem;
+            margin-bottom: 1.875rem;
             color: $colorfondo;
         }
 
         .sec-title h1:before {
             position: absolute;
             left: 0;
-            bottom: 5px;
-            width: 60px;
-            height: 2px;
+            bottom: 0.3125rem;
+            width: 3.75rem;
+            height: 0.125rem;
             content: "";
             background:$colorfondo;
         }
 
         .sec-title h1:after {
             position: absolute;
-            left: 20px;
-            bottom: 0px;
-            width: 60px;
-            height: 2px;
+            left: 1.25rem;
+            bottom: 0rem;
+            width: 3.75rem;
+            height: 0.125rem;
             content: "";
             background: $colorfondo;
         }
@@ -71,10 +71,10 @@
         }
 
         .sec-title h3 {
-            font-size: 25px;
+            font-size: 1.5625rem;
             font-weight: 600;
             line-height: 1.1em;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
 
         .sec-title.light h3 {
@@ -90,9 +90,9 @@
         }
 
         .sec-title .text {
-            margin-top: 15px;
+            margin-top: 0.9375rem;
             color: $grisclaro;
-            max-width: 960px;
+            max-width: 60rem;
         }
 
         .sec-title.centered .text {
@@ -100,7 +100,7 @@
         }
 
         .sec-title.style-two {
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
         }
 
 
@@ -119,19 +119,19 @@
         }
 
         .working-process .row {
-            margin: 0 -65px;
+            margin: 0 -4.0625rem;
         }
 
         .process-block {
             position: relative;
-            margin-bottom: 40px;
-            padding: 0 65px;
+            margin-bottom: 2.5rem;
+            padding: 0 4.0625rem;
         }
 
         .process-block .inner-box {
             position: relative;
-            padding: 50px 35px 33px;
-            box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1);
+            padding: 3.125rem 2.1875rem 2.0625rem;
+            box-shadow: 0rem 0.9375rem 2.4375rem 0rem rgba(8, 18, 109, 0.1);
             transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
             -webkit-transition: all 0.3s ease;
@@ -143,44 +143,44 @@
         }
 
         .process-block .inner-box:hover {
-            box-shadow: 0px -10px 39px 0px rgba(8, 18, 109, 0.1);
-            transform: translateY(-10px);
+            box-shadow: 0rem -0.625rem 2.4375rem 0rem rgba(8, 18, 109, 0.1);
+            transform: translateY(-0.625rem);
         }
 
         .process-block:nth-child(2) .inner-box {
-            margin-top: 70px;
+            margin-top: 4.375rem;
         }
 
         .process-block .inner-box .count-box {
             position: relative;
-            width: 80px;
-            height: 80px;
+            width: 5rem;
+            height: 5rem;
             background: $colorfondo;
             margin: 0 auto;
             color: #ffffff;
             text-align: center;
-            line-height: 80px;
-            font-size: 30px;
+            line-height: 5rem;
+            font-size: 1.875rem;
             font-weight: 800;
             -ms-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
-            border-radius: 10px;
-            margin-bottom: 25px;
+            border-radius: 0.625rem;
+            margin-bottom: 1.5625rem;
         }
 
         .process-block .inner-box h3 {
             position: relative;
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
         }
 
         .process-block .inner-box .text {
             position: relative;
             color: #777777;
-            font-size: 14px;
+            font-size: 0.875rem;
             line-height: 1.8em;
-            margin-bottom: 18px;
+            margin-bottom: 1.125rem;
             transition: all 0.3s ease;
             -moz-transition: all 0.3s ease;
             -webkit-transition: all 0.3s ease;
@@ -190,18 +190,18 @@
 
         @keyframes float-bob-y {
             0% {
-                -webkit-transform: translateY(-15px);
-                transform: translateY(-15px);
+                -webkit-transform: translateY(-0.9375rem);
+                transform: translateY(-0.9375rem);
             }
 
             50% {
-                -webkit-transform: translateY(-1px);
-                transform: translateY(-10px);
+                -webkit-transform: translateY(-0.0625rem);
+                transform: translateY(-0.625rem);
             }
 
             100% {
-                -webkit-transform: translateY(-15px);
-                transform: translateY(-15px);
+                -webkit-transform: translateY(-0.9375rem);
+                transform: translateY(-0.9375rem);
             }
         }
 
@@ -278,8 +278,8 @@
         &__imagen {
             width: 60%;
             height: auto;
-            padding: 30px;
-            margin-left: 10rem;
+            padding: 1.875rem;
+            margin-left: 160px;
         }
 
         @keyframes cambio {
