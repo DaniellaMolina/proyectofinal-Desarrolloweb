@@ -3,7 +3,7 @@
 
     .section1-slider {
         &__imagen{
-            height: 35rem;
+            object-fit: cover;
             
         }
         @include tablet {
@@ -116,10 +116,6 @@
             height: 100%;
             display: block;
             background: url() center center no-repeat;
-        }
-
-        .working-process .row {
-            margin: 0 -4.0625rem;
         }
 
         .process-block {

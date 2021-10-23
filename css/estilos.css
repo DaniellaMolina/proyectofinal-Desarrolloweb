@@ -112,7 +112,7 @@ body {
 
 /*secciones*/
 .section1-slider__imagen {
-  height: 35rem; }
+  object-fit: cover; }
 
 @media screen and (max-width: 768px) {
   .section1-slider__imagen {
@@ -204,9 +204,6 @@ body {
   height: 100%;
   display: block;
   background: url() center center no-repeat; }
-
-.section2 .working-process .row {
-  margin: 0 -4.0625rem; }
 
 .section2 .process-block {
   position: relative;
@@ -660,12 +657,11 @@ main {
   justify-content: space-between; }
 
 .section1__imagenQuienes {
-  margin-top: 5rem;
   margin-left: 10%;
-  width: 45%; }
+  width: 70%; }
 
 .section1__textoQuienes1 {
-  margin-top: 15%;
+  margin-top: 10%;
   margin-right: 10%;
   text-align: justify;
   color: #F2F2F2; }
