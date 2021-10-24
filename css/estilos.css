@@ -309,8 +309,12 @@ body {
   width: 100%;
   height: auto; }
   .section3-testimonios__titulo {
-    color: #F2F2F2;
-    text-align: start; }
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3.125rem;
+    padding-bottom: 1.875rem;
+    margin-bottom: 1.875rem;
+    color: #252526; }
   .section3-testimonios__testimonios {
     padding-left: 10rem;
     width: 100%;
@@ -379,28 +383,47 @@ body {
     .section4-wrapper .section4-wrapper__imagen {
       margin-left: 10rem; } }
 
-main {
-  margin-top: 5rem; }
-  main .section1-acerca {
+.section1-Acerca {
+  margin-bottom: 3.5rem;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between; }
+  .section1-Acerca__imagen {
+    height: 30rem;
+    width: auto;
+    margin: 3rem 0 0 4rem; }
+  .section1-Acerca__bloque {
+    margin: 10rem 0 0 3rem;
+    text-align: justify;
+    color: #F2F2F2; }
+  .section1-Acerca__texto {
+    width: rem; }
+
+.section2-importancia {
+  height: auto;
+  background-color: #8C8C8C;
+  border: solid #8C8C8C; }
+  .section2-importancia__bloque {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color: #8C8C8C; }
-    main .section1-acerca__imagen {
-      height: auto;
-      width: 25rem;
-      margin: 6rem 4rem 4rem 4rem; }
-    main .section1-acerca__texto {
-      text-align: justify;
-      color: #F2F2F2;
-      margin: 6rem;
-      padding: 4rem; }
-  @media screen and (max-width: 768px) {
-    main .section1-acerca {
-      display: flex;
-      flex-direction: column; }
-    main__texto {
-      font-size: 3rem; } }
+    justify-content: space-between;
+    margin-bottom: 5rem; }
+  .section2-importancia__bloque1 {
+    margin: 5rem; }
+  .section2-importancia__titulo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3.125rem;
+    color: #252526; }
+  .section2-importancia__imagen {
+    height: auto;
+    width: 200rem; }
+  .section2-importancia__ingresar {
+    margin-left: 15rem; }
+  .section2-importancia__texto {
+    width: 40rem;
+    text-align: justify; }
 
 .section1-contacto {
   display: flex;
@@ -651,30 +674,47 @@ main {
     background-color: #8C8C8C;
     box-shadow: 0 0.5rem 1.5rem 0 rgba(16, 39, 112, 0.2); }
 
-.section1__como {
+.section1-como {
+  margin-bottom: 3.5rem;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-
-.section1__imagenQuienes {
-  margin-left: 10%;
-  width: 70%; }
-
-.section1__textoQuienes1 {
-  margin-top: 10%;
-  margin-right: 10%;
-  text-align: justify;
-  color: #F2F2F2; }
+  .section1-como__imagen {
+    margin-left: 10%;
+    width: 70%; }
+  .section1-como__texto {
+    margin-top: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    color: #F2F2F2; }
 
 .section2-importancia {
-  height: auto; }
-  .section2-importancia__textoQuienes2 {
-    text-align: justify;
-    text-align: center;
-    color: #F2F2F2;
-    background-color: #8C8C8C; }
+  height: auto;
+  background-color: #8C8C8C;
+  border: solid #8C8C8C; }
+  .section2-importancia__bloque {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem; }
+  .section2-importancia__bloque1 {
+    margin: 5rem; }
+  .section2-importancia__titulo {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3.125rem;
+    color: #252526; }
+  .section2-importancia__imagen {
+    height: auto;
+    width: 200rem; }
+  .section2-importancia__ingresar {
+    margin-left: 15rem; }
+  .section2-importancia__texto {
+    width: 40rem;
+    text-align: justify; }
 
-.section3 .box-container {
+.section3-porque .box-container {
   display: flex;
   width: 100%;
   height: 100vh;
@@ -682,63 +722,6 @@ main {
   justify-content: center;
   align-items: center;
   background: #8C8C8C; }
-
-.section3 .box-container .card {
-  position: relative;
-  width: 18.75rem;
-  height: 25rem;
-  border-radius: 0.625rem;
-  overflow: hidden;
-  background: #f5f6fa;
-  box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2); }
-
-.section3 .box-container .card:hover {
-  /*%% Card on hover %%*/ }
-
-.section3 .box-container .card:hover:before {
-  height: 11.25rem; }
-
-.section3 .box-container .card:hover .social {
-  margin-top: 3.125rem; }
-
-.section3 .box-container .card:hover .pic {
-  width: 7.5rem;
-  height: 7.5rem;
-  margin-top: 3.125rem;
-  box-shadow: 0rem 0rem 0.625rem 0.0625rem #888; }
-
-.section3 .box-container .card:hover .content {
-  margin-top: 5.625rem; }
-
-.section3 .box-container .card .pic {
-  position: relative;
-  left: 50%;
-  top: 15%;
-  transform: translateX(-50%);
-  width: 8.75rem;
-  height: 8.75rem;
-  overflow: hidden;
-  transition: all 0.5s ease;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2); }
-
-.section3 .box-container .card .pic img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%; }
-
-.section3 .box-container .card .content {
-  margin-top: 5.625rem;
-  text-align: center;
-  padding: 0 1.875rem;
-  color: #2d3436;
-  transition: margin-top 0.5s ease; }
-
-.section3 .box-container .card .content .title {
-  margin-bottom: 0;
-  font-family: 'Yantramanav', sans-serif;
-  font-size: 1.375rem; }
 
 .section4-ruleta__titulo {
   color: #F2F2F2; }

@@ -1,18 +1,18 @@
 @import "../utilities/variables";
 
-  .section1 {
-      &__como {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      }
-  
-        &__imagenQuienes {
+  .section1-como {
+    margin-bottom: 3.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        
+        &__imagen {
         margin-left: 10%;
         width: 70%;
         }
 
-        &__textoQuienes1 {
+        &__texto {
         margin-top: 10%;
         margin-right: 10%;
         text-align: justify;
@@ -23,98 +23,55 @@
   
   .section2-importancia {
     height: auto;
-    &__textoQuienes2 {
+    background-color: $grisclaro;
+    border: solid $grisclaro;
+
+    &__bloque{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 5rem;
+    }
+    &__bloque1{
+      margin: 5rem;
+    }
+    &__titulo{
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 3.125rem;
+      color: $colorfondo;
+    }
+
+    &__imagen{
+      height: auto;
+      width: 200rem;
+    }
+
+    &__ingresar{
+      margin-left: 15rem;
+    }
+
+    &__texto{
+      width: 40rem;
       text-align: justify;
-      text-align: center;
-      color: $colorletra;
-      background-color: $grisclaro;
     }
 
 }
 
 
-  .section3 {
-   .box-container {
-     display: flex;
-     width: 100%;
-     height: 100vh;
-     flex-flow: row nowrap;
-     justify-content: center;
-     align-items: center;
-     background:$grisclaro;
-   }
-
-   .box-container .card {
-     position: relative;
-     width: 18.75rem;
-     height: 25rem;
-     border-radius: 0.625rem;
-     overflow: hidden;
-     background: #f5f6fa;
-     box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
-   }
-
+  .section3-porque {
+    .box-container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      background:$grisclaro;
+    }
+ 
   
-
-   .box-container .card:hover {
-     /*%% Card on hover %%*/
-   }
-
-   .box-container .card:hover:before {
-     height: 11.25rem;
-   }
-
-   .box-container .card:hover .social {
-     margin-top: 3.125rem;
-   }
-
-   .box-container .card:hover .pic {
-     width: 7.5rem;
-     height: 7.5rem;
-     margin-top: 3.125rem;
-     box-shadow: 0rem 0rem 0.625rem 0.0625rem #888;
-   }
-
-   .box-container .card:hover .content {
-     margin-top: 5.625rem;
-   }
-
-   .box-container .card .pic {
-     position: relative;
-     left: 50%;
-     top: 15%;
-     transform: translateX(-50%);
-     width: 8.75rem;
-     height: 8.75rem;
-     overflow: hidden;
-     transition: all 0.5s ease;
-     border-radius: 50%;
-     background: #fff;
-     box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
-   }
-
-   .box-container .card .pic img {
-     width: 100%;
-     height: 100%;
-     border-radius: 50%;
-   }
-
-   .box-container .card .content {
-     margin-top: 5.625rem;
-     text-align: center;
-     padding: 0 1.875rem;
-     color: #2d3436;
-     transition: margin-top 0.5s ease;
-   }
-
-   .box-container .card .content .title {
-     margin-bottom: 0;
-     font-family: 'Yantramanav', sans-serif;
-     font-size: 1.375rem;
-   }
-
-      
-
+ 
      }
  
      
