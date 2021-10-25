@@ -2,24 +2,24 @@
 
 
     .section1-slider {
+        
         &__imagen{
             object-fit: cover;
-            
+           
         }
         @include tablet {
              &__imagen {
                 width: 100%;
+                
              }
         }
     }
-    .section2{
+    .section2-pasos{
+        padding: 3.75rem 0;
+        background-color: $grisclaro;
+
         &__ingresar {
             margin-left: 40rem;
-        }
-        section {
-            padding: 3.75rem 0;
-            min-height: 100vh;
-            background-color: $grisclaro;
         }
 
         .sec-title {

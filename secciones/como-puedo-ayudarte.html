@@ -29,6 +29,70 @@
 <meta name="keywords"  content="Psicoterapia psicologia psicologa uruguay terapia proceso terapéutico acerca como puedo ayudarte">
 </head>
 
+<script>
+    // Initialization Area
+var painArray = ["YAS", "Yeah", "Mmkay", "Ouch", "Owwwww", "AHHHHHHH"];
+var pain = {}
+for (var i = 0; i < painArray.length; i ++){
+  pain[i] = painArray[i];
+} 
+var needle = $("#needle");
+var prevFace = ".faces #Ouch";
+var slider = document.getElementById("slider");
+
+var level = document.getElementById("level");
+level.innerHTML = slider.value;
+
+function findPainLevel(value) {
+  var painLevel = Math.floor(value / (Math.round(100/6)));
+  return painLevel;
+}
+
+function moveGauge(input) {
+  var value = Number(input);
+  var maxScale = 943;
+  var minScale = 471;
+  var maxDegree = 85;
+  var scaledValue = ((maxScale - minScale) / 100)* value + minScale;
+  var midScale = (maxScale - minScale)/2 + minScale; // mid is actually rotate 0
+  
+  if (scaledValue <= midScale) {
+    var rotate = 1;
+  }
+  else{
+    var rotate = -1;
+  }
+  
+  var scalePerDegree = (midScale - minScale) / maxDegree;
+  var rotateValue = (midScale  - scaledValue)/scalePerDegree;  
+  var rotation = rotate * rotateValue;
+  //console.log(input,scaledValue ,midScale, rotate, rotation);
+  var tl = new TimelineLite();
+  tl.to(needle, 1, {rotation: rotateValue});
+}
+
+function morphFace(painLevel){
+  var mouthExpression;
+  mouthExpression = "#mouth_" + painLevel;
+  var facialExpression = ".faces #" + pain[painLevel];
+  var tl = new TimelineMax();
+  tl.to("#mouth_3", 1, {morphSVG:mouthExpression});
+  $(prevFace).css("visibility", "hidden");
+  $(facialExpression).css("visibility", "visible");
+  prevFace = facialExpression;
+
+}
+
+slider.oninput = function() {
+  $(level).css("visibility", "visible");
+  var currentLevel = this.value;
+  var painLevel = findPainLevel(currentLevel);
+  moveGauge(currentLevel);
+  level.innerHTML = pain[painLevel];
+  morphFace(painLevel);
+
+}
+</script>
 <!-- Cuerpo de página de inicio -->
 <body>
     <div class="container">
@@ -69,24 +133,63 @@
         </nav>
         </header>
 
-
         <main class="main">
-            <!-- Quines pueden hacer terapia  -->
+            <!-- Como puedo ayudarte  -->
             <section class="section1">
-                <div class="section1__como">
-                    <div>
-                        <img class="section1__imagenQuienes" src="../imagenes/quienespuedenhacerterapia.png" alt="">
-                    </div>
-
-                    <div class="section1__textoQuienes1">
-                        <h1 class="divTexto3">¿Quienes pueden hacer terapia?</h1>
-                        <p>Para todas aquellas personas que buscan ayuda para resolver situaciones cotidianas traumáticas que no estan dejando desarrollarse en plenitud en algun ambito de su vida. Un proceso terapéutico es para  poner en práctica formas eficaces de solucionar, afrontar,  manejar,  superar o prevenir aquellos problemas psicológicos o situaciones problemáticas y dificultades, tanto internas como externas,  que hacen que la persona se sienta mal en algún momento de su vida.</p>
+                <div class="section1-como">
+                    <div class="section1-como__texto">
+                        <h1 class="section1-como__titulo">¿Cómo te sentis hoy?</h1>
+                        <p>Identificar lo que sentimos es el primer paso para darnos Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere mollitia accusamus quo eveniet, in hic quasi iste dicta voluptatem ipsa doloribus reprehenderit atque explicabo impedit cumque nesciunt consequatur magnam. Distinctio?</p>                    
                         <a href="../secciones/ingresar.html">
                             <button type="button" class="section2__ingresar btn btn-secondary btn-lg" >REGISTRATE
                         </button>
                         </a>
                     </div>
-                </div>
+                    <div id="container">
+                        <svg width="700" height="400" viewBox="0 0 800 400" id="scale">
+                          <circle id="YAS" r="150" cx="50%" cy="50%" >
+                          </circle>
+                          <circle id="Yeah" r="150" cx="50%" cy="50%"></circle>
+                          <circle id="Mmkay" r="150" cx="50%" cy="50%"></circle>
+                          <circle id="Ouch" r="150" cx="50%" cy="50%"></circle>
+                          <circle id="Owwwww" r="150" cx="50%" cy="50%"></circle>
+                          <circle id="AHHHHHHH" r="150" cx="50%" cy="50%"></circle>
+                          <polygon id = "needle" points="390, 200 410,200 400, 340" />
+                        </svg>
+                        <input id="slider" type="range" min="0" max="100" value="50" />
+                        <label id="level" id="value">severe</label>
+                        <svg class = "faces" viewBox="0 0 105 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                          <g id="YAS">
+                              <circle id="face_0" cx="52.5" cy="52.5" r="50" style="fill:rgb(33,166,98);"/>
+                              <path id="mouth_0" d="M36.391,64.422C36.391,64.422 37.32,82.444 52.5,82.19C67.313,81.942 69.171,64.379 69.085,64.268" style="fill:none;stroke:white;stroke-width:5px;"/>
+                          </g>
+                          <g id="Yeah">
+                              <circle id="face_1" cx="52.5" cy="52.5" r="50" style="fill:rgb(141,217,149);"/>
+                              <path id="mouth_1" d="M36.391,64.422C36.391,64.422 37.32,73.785 52.5,73.532C67.313,73.284 69.171,64.379 69.085,64.268" style="fill:none;stroke:white;stroke-width:5px;"/>
+                          </g>
+                          <g id="Mmkay">
+                              <circle id="face_2" cx="52.5" cy="52.5" r="50" style="fill:rgb(231,228,122);"/>
+                              <path id="mouth_2" d="M36.391,64.422C36.391,64.422 37.421,64.423 52.601,64.17C67.414,63.922 69.171,64.379 69.085,64.268" style="fill:none;stroke:white;stroke-width:5px;"/>
+                          </g>
+                          <g id="Ouch">
+                              <circle id="face_3" cx="52.5" cy="52.5" r="50" style="fill:rgb(223,149,51);"/>
+                              <path id="mouth_3" d="M34.293,69.676C34.293,69.676 37.421,64.423 52.601,64.17C67.414,63.922 72.612,69.21 72.526,69.099" style="fill:none;stroke:white;stroke-width:5px;"/>
+                          </g>
+                          <g id="Owwwww">
+                              <circle id="face_4" cx="52.5" cy="52.5" r="50" style="fill:rgb(232,103,13);"/>
+                              <path id="mouth_4" d="M35.202,72.615C35.202,72.615 37.421,64.423 52.601,64.17C67.414,63.922 73.549,70.769 73.949,71.595" style="fill:none;stroke:white;stroke-width:5px;"/>
+                          </g>
+                          <g id="AHHHHHHH">
+                              <circle id="face_5" cx="52.5" cy="52.5" r="50" style="fill:rgb(193,72,37);"/>
+                              <path id="mouth_5" d="M35.202,75.377C35.202,75.377 37.421,64.423 52.601,64.17C67.414,63.922 73.245,70.671 73.949,75.347" style="fill:none;stroke:white;stroke-width:5px;"/>
+                          </g>
+                          <g id="base">
+                              <ellipse id="eye_r" cx="29.31" cy="42.488" rx="3.922" ry="3.923" style="fill:white;"/>
+                              <ellipse id="eye_l" cx="75.706" cy="42.488" rx="3.922" ry="3.923" style="fill:white;"/>
+                          </g>
+                      </svg>
+                      </div>
+                </div>                
             </section>
 
             <!-- Sección importancia de hacer terapia -->
@@ -95,42 +198,66 @@
                 
                 <div class="section2-importancia">
                     <div class="section2-importancia__bloque">
-                    <div class="section2-importancia__bloque1">
-                        <h2 class="section2-importancia__titulo">¿Por qué hacer terapia?</h2>
-                        <p class="section2-importancia__texto">Detrás de cada persona hay vivencias personales, familiares, historias, creencias, huellas y estas se expresan en nuestros cuerpos, en decisiones, en expresiones, en los sentimientos, en las emociones, en nuestra salud mental.
-                        Comprender qué un proceso terapéutico es necesario, tanto como controlarse la salud física, es el comienzo de un camino para sanar, de autoconocimiento, de transformación y aprendizaje.
-                        </p>
-                        <a href="../secciones/ingresar.html">
-                            <button type="button" class="section2-importancia__ingresar btn btn-secondary btn-lg center">INGRESAR</button>
-                        </a>
+                        <div class="section2-importancia__bloque1">
+                            <h2 class="section2-importancia__titulo">¿Cómo te puedo ayudar?</h2>
+                            <p class="section2-importancia__texto">A veces dar el primer paso de iniciar terapia no es facil, pueden surgir miedos, prejuicios, dudas, no queremos remover hechos dolorosos, tenemos miedo a la mirada del otro. Por ello te invito a ser valiente para que te des un espacio donde hare que te sientas comodo y en confianza. Me importa tu salud mental por lo que buscaremos juntos estrategias para que puedas desarrollarte de la mejor manera en aquellas cuestiones que te estan generando algun problema. 
+                            </p>
+                            <a href="../secciones/ingresar.html">
+                                <button type="button" class="section2-importancia__ingresar btn btn-secondary btn-lg center">INGRESAR</button>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="../imagenes/recurso10.png" class="section2-importancia__imagen flex-wrap img-fluid" alt="Foto importancia">
+                        </div>
                     </div>
-                    <div>
-                        <img src="../imagenes/recurso10.png" class="section2-importancia__imagen flex-wrap img-fluid" alt="Foto importancia">
-                    </div>
-                    
                 </div>
-                    
-                </div>
-                <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #8c8c8c;"></path></svg></div>
-
-              
-        </section>
-
-            <!-- Porque es importante empezar un proceso -->
-            <section class="section3">
-                <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C224.32,242.27 349.20,-49.98 591.13,42.92 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #8c8c8c;"></path></svg></div>
                 
-                <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #08f;"></path></svg></div>
+                <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #8c8c8c;"></path></svg></div>
             </section>
 
-            <!-- Ruleta de emociones -->
-             <section class="section4">
-                 <div class="section4-ruleta">
-                    <h3 class="section4-ruleta__titulo">¿Alguna vez tuiste alguna de estas emociones?</h3>
-                    <iframe src="https://wordwall.net/embed/e0be05ab583947bc94b9cdebaa743502?themeId=1&templateId=8" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            <section class="section3">
+                <h2 class="section3-card__titulo">¿Con cuál emocion te identificas hoy?</h2>
+                <div class="section3-card">
+                    <a href="#" class="card education">
+                        <div class="overlay"></div>
+                    <div class="circle">
+                    <svg width="71px" height="76px" viewBox="29 14 71 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(30.000000, 14.000000)">   
+                        </g>
+                    </svg>
+                        </div>
+                        <p>Contento</p>
+                    </a>
+                    <a href="#" class="card credentialing">
+                            <div class="overlay"></div>
+                        <div class="circle">
+                    <svg width="64px" height="72px" viewBox="27 21 64 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <polygon id="path-1" points="60.9784821 18.4748913 60.9784821 0.0299638385 0.538377293 0.0299638385 0.538377293 18.4748913"></polygon>
+                        </defs>
+                        
+                    </svg>
+                        </div>
+                        <p>Triste</p>
+                    </a>
+                    <a href="#" class="card wallet">
+                            <div class="overlay"></div>
+                        <div class="circle">
+                    <svg width="78px" height="60px" viewBox="23 29 78 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    </svg>
+                        </div>
+                        <p>Miedo</p>
+                    </a>
+                    <a href="#" class="card human-resources">
+                            <div class="overlay"></div>
+                        <div class="circle">                                
+                    <svg width="66px" height="77px" viewBox="1855 26 66 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    </svg>
+                        </div>
+                        <p>Enojado</p>
+                    </a>
                 </div>
             </section>
-      
 
     </main>
 
@@ -144,7 +271,6 @@
                 <a href="https://www.linkedin.com/in/licdaniellamolina/" target="blank"><img src="../imagenes/linkediin.png" alt="Logo Linkedin" class="footer__imagen"></a>
                 <div class="footer__copy"> &copy; 2021 Daniella Molina. Derechos reservados</div>
             </div>
-           
         </footer>
 
 
