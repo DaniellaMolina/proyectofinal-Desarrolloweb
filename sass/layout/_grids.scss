@@ -1,7 +1,7 @@
     @import "../utilities/variables";
     .container {
       padding: 0;
-      max-width: 1920px;
+      max-width: $lg $xl $xxl $md $sm;
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: auto auto auto;
