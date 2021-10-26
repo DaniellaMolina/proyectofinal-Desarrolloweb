@@ -14,48 +14,125 @@
 
       &__texto {
       margin-top: 3rem;
-      margin-right: 5rem;
+      margin-right: 15rem;
       text-align: justify;
       color: #F2F2F2;
+      }
+
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+
+        &__imagen {
+          width: 50%;
+          }
+        
+        &__texto {
+          width: 100%;
+          text-align: justify;
+          font-size: 1rem;
+          }
+
+        &__titulo {
+          font-size: 2rem;
+          text-align: start;
+        }
+
+      }
+
+      @include movil {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+
+        &__imagen {
+          margin-top: 4rem;
+          width: 80%;
+          }
+        
+        &__texto {
+          width: 100%;
+          text-align: justify;
+          font-size: 1rem;
+          }
+
+        &__titulo {
+          font-size: 2rem;
+          text-align: start;
+        }
+
+        &__ingresar {
+        }
       }
 }
 
   
-  .section2-importancia {
-    height: auto;
-    background-color: $grisclaro;
-    border: solid $grisclaro;
+.section2-importancia {
+  height: auto;
+  background-color: $grisclaro;
+  border: solid $grisclaro;
 
+  &__bloque{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  &__bloque1{
+    margin: 5rem;
+  }
+
+  &__titulo{
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3.125rem;
+    color: $colorfondo;
+  }
+
+  &__imagen{
+    height: auto;
+    width: 100%;
+  }
+
+  &__ingresar{
+    margin-left: 15rem;
+  }
+
+  &__texto{
+    width: 40rem;
+    text-align: justify;
+  }
+
+  @include tablet {
     &__bloque{
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 5rem;
-    }
-    &__bloque1{
-      margin: 5rem;
-    }
-    &__titulo{
-      font-size: 2.5rem;
-      font-weight: 800;
-      line-height: 3.125rem;
-      color: $colorfondo;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
 
     &__imagen{
-      height: auto;
-      width: 50rem;
+      width: 100%;
     }
+  }
 
-    &__ingresar{
-      margin-left: 15rem;
+  @include movil {
+    &__bloque{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
-
     &__texto{
-      width: 40rem;
+      width: 100%;
       text-align: justify;
     }
-
+    &__imagen{
+      width: 100%;
+    }
+    &__ingresar{
+      margin-left: 1rem;
+    }
+  }
 }
 
 

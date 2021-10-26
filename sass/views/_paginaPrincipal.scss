@@ -21,18 +21,13 @@
   }
 
   /*Seccion1*/
-    .section1-slider {
-        margin-top: 4rem;
-        
+    .section1-slider {   
+        margin-bottom: 5rem;
         &__imagen{
           object-fit: cover;
-          height: 30rem;           
+          height: 40rem;           
         }
 
-        &__botones{
-            margin-top: 40rem;
-            border: solid red;
-        }
         @include tablet {
              &__imagen {
                 width: 100%;  
@@ -46,7 +41,7 @@
         object-fit: cover;
 
         &__ingresar {
-            margin-left: 40rem;
+            margin-left: 45%;
         }
 
         .sec-title {
@@ -255,39 +250,32 @@
             -o-animation-timing-function: linear;
         }
 
-         @include tablet {
-             .section2-pasos {
-                 width: auto;
-                 height: auto;
-             }
-               .ingresar {
-                   margin-left: 10rem;
-               }
-         }
-
+    }
+        
+    @include tablet {
+            .seccion2-pasos {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
     /*Seccion 3*/
     .section3-testimonios {
-        margin-top: 10rem;
-        width: 100%;
         height: auto;
+        background-color: $grisclaro;
 
         &__titulo {
         font-size: 2.5rem;
         font-weight: 800;
         line-height: 3.125rem;
-        padding-bottom: 1.875rem;
         margin-bottom: 1.875rem;
         color: $colorfondo;
         }
 
         &__testimonios {
-            padding-left: 10rem;
-            width: 100%;
+            width: 80%;
             margin: auto;
             overflow: hidden; 
-            background-color: $grisclaro;
         }
 
         &__testimoniosUl {
@@ -304,7 +292,7 @@
         }
 
         &__imagen {
-            width: 40%;
+            width: 50%;
             height: auto;
             padding: 1.875rem;
             margin-left: 160px;
@@ -339,20 +327,24 @@
 
     /*Seccion 4*/
     .section4-wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-           .typing-demo {
-            width: 100%;
-            animation: typing 2s steps(22), blink .5s step-end infinite;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 3px solid;
-            font-family: poppins;
-            font-size: 3rem;
-            color: $colorletra;
-            margin-top: 7rem;           
+        &__wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;   
+        }
+       
+        .typing-demo {
+        width: 62%;
+        height: 4rem;
+        animation: typing 2s steps(22), blink .5s step-end infinite;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: poppins;
+        font-size: 3rem;
+        color: $colorletra;
+        margin-top: 10rem;   
         }
 
         @keyframes typing {
@@ -376,5 +368,24 @@
                  margin-left: 10rem;
              }
          }
+
+     
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            padding: 10rem;
+
+            .typing-demo {
+                width: 100%;
+                font-size: 2.5rem;        
+                }
+        }
+    }
+
+    .rounded{
+        width: 22rem;
+        position: absolute;
+        right: 3rem;
+        margin-top: 10rem;
     }
 
