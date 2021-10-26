@@ -111,29 +111,51 @@ body {
   margin-top: -3.125rem; }
 
 /*secciones*/
-.section1-slider__imagen {
-  object-fit: cover; }
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100; }
 
-@media screen and (max-width: 768px) {
+.my-float {
+  margin-top: 16px; }
+
+.section1-slider {
+  margin-top: 4rem; }
   .section1-slider__imagen {
-    width: 100%; } }
+    object-fit: cover;
+    height: 30rem; }
+  .section1-slider__botones {
+    margin-top: 40rem;
+    border: solid red; }
+  @media screen and (max-width: 768px) {
+    .section1-slider__imagen {
+      width: 100%; } }
 
 .section2-pasos {
-  padding: 3.75rem 0;
-  background-color: #8C8C8C; }
+  background-color: #8C8C8C;
+  object-fit: cover; }
   .section2-pasos__ingresar {
     margin-left: 40rem; }
   .section2-pasos .sec-title {
     position: relative;
-    margin-bottom: 3.125rem; }
+    margin-bottom: 1rem; }
   .section2-pasos .sec-title.small {
     margin-bottom: 2.1875rem; }
   .section2-pasos .sec-title h1 {
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 3.125rem;
-    padding-bottom: 1.875rem;
-    margin-bottom: 1.875rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     color: #252526; }
   .section2-pasos .sec-title h1:before {
     position: absolute;

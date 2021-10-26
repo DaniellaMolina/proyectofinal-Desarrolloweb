@@ -1,22 +1,44 @@
 @import "../utilities/variables"; 
 
-
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+  }
+  
+  .my-float{
+    margin-top:16px;
+  }
     .section1-slider {
+        margin-top: 4rem;
         
         &__imagen{
-            object-fit: cover;
-           
+          object-fit: cover;
+          height: 30rem;           
+        }
+
+        &__botones{
+            margin-top: 40rem;
+            border: solid red;
         }
         @include tablet {
              &__imagen {
-                width: 100%;
-                
+                width: 100%;  
              }
         }
     }
     .section2-pasos{
-        padding: 3.75rem 0;
         background-color: $grisclaro;
+        object-fit: cover;
 
         &__ingresar {
             margin-left: 40rem;
@@ -24,7 +46,7 @@
 
         .sec-title {
             position: relative;
-            margin-bottom: 3.125rem;
+            margin-bottom: 1rem;
         }
 
         .sec-title.small {
@@ -35,8 +57,8 @@
             font-size: 2.5rem;
             font-weight: 800;
             line-height: 3.125rem;
-            padding-bottom: 1.875rem;
-            margin-bottom: 1.875rem;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
             color: $colorfondo;
         }
 
@@ -237,6 +259,7 @@
                    margin-left: 10rem;
                }
          }
+
         }
 
          
