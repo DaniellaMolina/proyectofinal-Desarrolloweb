@@ -1,23 +1,26 @@
 @import "../utilities/variables"; 
 
+/*Whatsapp*/
 .float{
     position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
+    width:3.75rem;
+    height:3.75rem;
+    bottom:2.5rem;
+    right:2.5rem;
     background-color:#25d366;
     color:#FFF;
-    border-radius:50px;
+    border-radius:3.125rem;
     text-align:center;
-    font-size:30px;
-    box-shadow: 2px 2px 3px #999;
+    font-size:1.875rem;
+    box-shadow: 0.125rem 0.125rem 0.1875rem $grisclaro;
     z-index:100;
   }
   
   .my-float{
-    margin-top:16px;
+    margin-top:1rem;
   }
+
+  /*Seccion1*/
     .section1-slider {
         margin-top: 4rem;
         
@@ -36,6 +39,8 @@
              }
         }
     }
+
+    /*Seccion 2*/
     .section2-pasos{
         background-color: $grisclaro;
         object-fit: cover;
@@ -262,7 +267,7 @@
 
         }
 
-         
+    /*Seccion 3*/
     .section3-testimonios {
         margin-top: 10rem;
         width: 100%;
@@ -299,7 +304,7 @@
         }
 
         &__imagen {
-            width: 60%;
+            width: 40%;
             height: auto;
             padding: 1.875rem;
             margin-left: 160px;
@@ -330,16 +335,9 @@
                 margin-left: -200%;
             }
         }
-
-        @include tablet {
-            .section3-testimonios {
-                width: auto;
-                height: auto;
-            }
-        }
     }
 
-
+    /*Seccion 4*/
     .section4-wrapper {
         display: flex;
         flex-direction: row;
