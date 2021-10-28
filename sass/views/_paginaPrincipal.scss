@@ -33,6 +33,13 @@
                 width: 100%;  
              }
         }
+
+        @include movil {
+            &__imagen {
+               width: 100%;  
+            }
+                      
+       }
     }
 
     /*Seccion 2*/
@@ -249,15 +256,8 @@
             -o-animation-iteration-count: infinite;
             -o-animation-timing-function: linear;
         }
-
     }
         
-    @include tablet {
-            .seccion2-pasos {
-                display: flex;
-                flex-direction: column;
-            }
-        }
 
     /*Seccion 3*/
     .section3-testimonios {
@@ -292,7 +292,7 @@
         }
 
         &__imagen {
-            width: 50%;
+            width: 60%;
             height: auto;
             padding: 1.875rem;
             margin-left: 160px;
@@ -323,6 +323,8 @@
                 margin-left: -200%;
             }
         }
+
+        
     }
 
     /*Seccion 4*/
@@ -358,28 +360,30 @@
                 border-color: transparent;
             }
         }
-         @include tablet {
-             .section4-wrapper {
-                display: flex;
-                flex-direction: column;
-             }
+      
+    }
 
-             .section4-wrapper__imagen{
-                 margin-left: 10rem;
-             }
-         }
+    @include tablet {
+        .typing-demo {
+            width: 50%;
+            height: 2rem;           
+            font-size: 1rem;
+            color: $colorletra;
+            margin-top: 10rem; 
+            border: solid red;  
+            }
+     }
 
-     
-        @include tablet {
-            display: flex;
-            flex-direction: column;
-            padding: 10rem;
+ 
+    @include movil {
+        display: flex;
+        flex-direction: column;
+        padding: 10rem;
 
-            .typing-demo {
-                width: 100%;
-                font-size: 2.5rem;        
-                }
-        }
+        .typing-demo {
+        width: 100%;
+        font-size: 1rem;        
+        } 
     }
 
     .rounded{
@@ -387,5 +391,12 @@
         position: absolute;
         right: 3rem;
         margin-top: 10rem;
+
+        @include tablet {
+            right: 1rem;
+            width: 18rem;
+        }        
     }
+
+
 

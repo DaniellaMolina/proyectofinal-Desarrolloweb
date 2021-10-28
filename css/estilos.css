@@ -79,6 +79,14 @@ footer {
 body {
   background-color: #252526; }
 
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  * {
+    font-size: 13px; } }
+
+@media screen and (max-width: 425px) and (max-width: 425px) {
+  * {
+    font-size: 10px; } }
+
 /*Themes*/
 .page_404 {
   padding: 2.5rem 0;
@@ -136,6 +144,9 @@ body {
     object-fit: cover;
     height: 40rem; }
   @media screen and (max-width: 768px) {
+    .section1-slider__imagen {
+      width: 100%; } }
+  @media screen and (max-width: 425px) {
     .section1-slider__imagen {
       width: 100%; } }
 
@@ -293,11 +304,6 @@ body {
     -o-animation-iteration-count: infinite;
     -o-animation-timing-function: linear; }
 
-@media screen and (max-width: 768px) {
-  .seccion2-pasos {
-    display: flex;
-    flex-direction: column; } }
-
 /*Seccion 3*/
 .section3-testimonios {
   height: auto;
@@ -322,7 +328,7 @@ body {
     width: 100%;
     list-style: none; }
   .section3-testimonios__imagen {
-    width: 50%;
+    width: 60%;
     height: auto;
     padding: 1.875rem;
     margin-left: 160px; }
@@ -369,26 +375,31 @@ body {
     border-color: transparent; } }
 
 @media screen and (max-width: 768px) {
-  .section4-wrapper .section4-wrapper {
-    display: flex;
-    flex-direction: column; }
-  .section4-wrapper .section4-wrapper__imagen {
-    margin-left: 10rem; } }
+  .typing-demo {
+    width: 50%;
+    height: 2rem;
+    font-size: 1rem;
+    color: #F2F2F2;
+    margin-top: 10rem;
+    border: solid red; } }
 
-@media screen and (max-width: 768px) {
-  .section4-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 10rem; }
-    .section4-wrapper .typing-demo {
-      width: 100%;
-      font-size: 2.5rem; } }
+@media screen and (max-width: 425px) {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  .typing-demo {
+    width: 100%;
+    font-size: 1rem; } }
 
 .rounded {
   width: 22rem;
   position: absolute;
   right: 3rem;
   margin-top: 10rem; }
+  @media screen and (max-width: 768px) {
+    .rounded {
+      right: 1rem;
+      width: 18rem; } }
 
 .section1-Acerca {
   margin-bottom: 3.5rem;
@@ -732,7 +743,9 @@ body {
         font-size: 1rem; }
       .section1-quienes__titulo {
         font-size: 2rem;
-        text-align: start; } }
+        text-align: start; }
+      .section1-quienes * {
+        font-size: 13px; } }
   @media screen and (max-width: 425px) {
     .section1-quienes {
       display: flex;
@@ -792,6 +805,88 @@ body {
       width: 100%; }
     .section2-importancia__ingresar {
       margin-left: 1rem; } }
+
+/*Services Styles*/
+.services {
+  position: relative;
+  width: 75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #252526;
+  margin: 80px; }
+  .services__bloque1 {
+    display: flex; }
+  .services__texto {
+    color: #F2F2F2;
+    font-size: 2.5rem;
+    margin: 15rem 0 0 10rem; }
+  .services__imagen {
+    height: 25rem;
+    margin-left: 5rem; }
+  .services__box {
+    position: relative;
+    width: 21.875rem;
+    height: 17.5rem;
+    background: #8C8C8C;
+    border-radius: 1.25rem;
+    overflow: hidden; }
+    .services__box:hover .services__content {
+      transform: scale(1);
+      transition-delay: 0.25s; }
+    .services__box:hover .services__icon {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      top: 1.875rem;
+      left: calc(50% - 2.5rem);
+      transition-delay: 0s; }
+      .services__box:hover .services__icon ion-icon {
+        font-size: 2rem;
+        transition-delay: 0s; }
+  .services__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    z-index: 2;
+    transition-delay: 0.25s; }
+    .services__icon ion-icon {
+      font-size: 4rem;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.5s;
+      transition-delay: 0s; }
+  .services__content {
+    position: relative;
+    color: #fff;
+    padding: 1.25rem;
+    text-align: center;
+    margin-top: 6.25rem;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s; }
+  .services__title {
+    margin: 0.625rem 0 0.3125rem 0;
+    font-size: 19.2px;
+    font-weight: 600; }
+  .services__description {
+    font-size: 0.95rem;
+    font-weight: 400;
+    padding-top: 0.625rem; }
 
 .section1-como {
   height: auto;

@@ -37,6 +37,10 @@
           font-size: 2rem;
           text-align: start;
         }
+        
+        *{
+          font-size: 13px;
+        }
 
       }
 
@@ -136,7 +140,109 @@
 }
 
 
-.section3-beneficios{
-  
 
+/*Services Styles*/
+.services {
+  position: relative;
+  width: 75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: $colorfondo;
+  margin: 80px;
+
+  &__bloque1 {
+    display: flex;
+  }
+
+  &__texto {
+    color: $colorletra;
+    font-size: $titulos;
+    margin: 15rem 0 0 10rem;
+  }
+
+  &__imagen{
+    height: 25rem;
+    margin-left: 5rem;
+  }
+  &__box {
+    position: relative;
+    width: 21.875rem;
+    height: 17.5rem;
+    background: $grisclaro;
+    border-radius: 1.25rem;
+    overflow: hidden;
+
+    &:hover .services__content {
+      transform: scale(1);
+      transition-delay: 0.25s;
+    }
+
+    &:hover .services__icon {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      top: 1.875rem;
+      left: calc(50% - 2.5rem);
+      transition-delay: 0s;
+
+      & ion-icon {
+        font-size: 2rem;
+        transition-delay: 0s;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    z-index: 2;
+    transition-delay: 0.25s;
+
+    & ion-icon {
+      font-size: 4rem;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.5s;
+      transition-delay: 0s;
+    }
+  }
+
+  &__content {
+    position: relative;
+    color: #fff;
+    padding: 1.25rem;
+    text-align: center;
+    margin-top: 6.25rem;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+
+  &__title {
+    margin: 0.625rem 0 0.3125rem 0;
+    font-size: 19.2px;
+    font-weight: 600;
+  }
+
+  &__description {
+    font-size: 0.95rem;
+    font-weight: 400;
+    padding-top: 0.625rem;
+  }
 }
