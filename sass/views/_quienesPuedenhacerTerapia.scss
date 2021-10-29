@@ -6,6 +6,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
       
       &__imagen {
       margin-left: 10%;
@@ -17,58 +22,24 @@
       margin-right: 15rem;
       text-align: justify;
       color: #F2F2F2;
+
+        @include movil {
+          width: 25rem;
+          text-align: justify;
+          font-size: 1rem;
+        }
       }
 
-      @include tablet {
-        display: flex;
-        flex-direction: column;
-
+  
         &__imagen {
           width: 50%;
+
+          @include movil {
+            width: 20%;
+          }
           }
         
-        &__texto {
-          width: 100%;
-          text-align: justify;
-          font-size: 1rem;
-          }
-
-        &__titulo {
-          font-size: 2rem;
-          text-align: start;
-        }
-        
-        *{
-          font-size: 13px;
-        }
-
       }
-
-      @include movil {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem;
-
-        &__imagen {
-          margin-top: 4rem;
-          width: 80%;
-          }
-        
-        &__texto {
-          width: 100%;
-          text-align: justify;
-          font-size: 1rem;
-          }
-
-        &__titulo {
-          font-size: 2rem;
-          text-align: start;
-        }
-
-        &__ingresar {
-        }
-      }
-}
 
   
 .section2-importancia {
@@ -138,7 +109,6 @@
     }
   }
 }
-
 
 
 /*Services Styles*/

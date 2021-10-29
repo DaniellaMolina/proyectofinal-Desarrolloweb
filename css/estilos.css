@@ -168,6 +168,9 @@ body {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     color: #252526; }
+    @media screen and (max-width: 425px) {
+      .section2-pasos .sec-title h1 {
+        font-size: 2rem; } }
   .section2-pasos .sec-title h1:before {
     position: absolute;
     left: 0;
@@ -201,6 +204,9 @@ body {
     color: #fff; }
   .section2-pasos .sec-title.centered {
     text-align: center; }
+    @media screen and (max-width: 425px) {
+      .section2-pasos .sec-title.centered {
+        width: 35rem; } }
   .section2-pasos .sec-title .text {
     margin-top: 0.9375rem;
     color: #8C8C8C;
@@ -223,6 +229,14 @@ body {
     position: relative;
     margin-bottom: 2.5rem;
     padding: 0 4.0625rem; }
+    @media screen and (max-width: 425px) {
+      .section2-pasos .process-block {
+        padding: 1rem;
+        width: 100%; } }
+    @media screen and (max-width: 768px) {
+      .section2-pasos .process-block {
+        padding: 1rem;
+        width: 100%; } }
   .section2-pasos .process-block .inner-box {
     position: relative;
     padding: 3.125rem 2.1875rem 2.0625rem;
@@ -235,6 +249,9 @@ body {
     background-color: #ffffff;
     text-align: center;
     transition: .5s ease; }
+    @media screen and (max-width: 425px) {
+      .section2-pasos .process-block .inner-box {
+        padding: 1rem; } }
   .section2-pasos .process-block .inner-box:hover {
     box-shadow: 0rem -0.625rem 2.4375rem 0rem rgba(8, 18, 109, 0.1);
     transform: translateY(-0.625rem); }
@@ -331,7 +348,11 @@ body {
     width: 60%;
     height: auto;
     padding: 1.875rem;
-    margin-left: 160px; }
+    margin-left: 10rem; }
+    @media screen and (max-width: 425px) {
+      .section3-testimonios__imagen {
+        margin: 0;
+        width: 100%; } }
 
 @keyframes cambio {
   0% {
@@ -351,7 +372,6 @@ body {
 .section4-wrapper__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   position: relative; }
 
 .section4-wrapper .typing-demo {
@@ -365,6 +385,14 @@ body {
   font-size: 3rem;
   color: #F2F2F2;
   margin-top: 10rem; }
+  @media screen and (max-width: 425px) {
+    .section4-wrapper .typing-demo {
+      width: 100%;
+      font-size: 2rem; } }
+  @media screen and (max-width: 768px) {
+    .section4-wrapper .typing-demo {
+      width: 80%;
+      font-size: 2.5rem; } }
 
 @keyframes typing {
   from {
@@ -374,32 +402,17 @@ body {
   50% {
     border-color: transparent; } }
 
-@media screen and (max-width: 768px) {
-  .typing-demo {
-    width: 50%;
-    height: 2rem;
-    font-size: 1rem;
-    color: #F2F2F2;
-    margin-top: 10rem;
-    border: solid red; } }
-
-@media screen and (max-width: 425px) {
-  display: flex;
-  flex-direction: column;
-  padding: 10rem;
-  .typing-demo {
-    width: 100%;
-    font-size: 1rem; } }
-
-.rounded {
+.section4-wrapper .rounded {
   width: 22rem;
   position: absolute;
   right: 3rem;
   margin-top: 10rem; }
+  @media screen and (max-width: 425px) {
+    .section4-wrapper .rounded {
+      margin-top: 17rem; } }
   @media screen and (max-width: 768px) {
-    .rounded {
-      right: 1rem;
-      width: 18rem; } }
+    .section4-wrapper .rounded {
+      margin-top: 12rem; } }
 
 .section1-Acerca {
   margin-bottom: 3.5rem;
@@ -407,17 +420,37 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between; }
+  @media screen and (max-width: 425px) {
+    .section1-Acerca {
+      display: flex;
+      flex-direction: column; } }
+  @media screen and (max-width: 768px) {
+    .section1-Acerca {
+      display: flex;
+      flex-direction: column; } }
   .section1-Acerca__imagen {
     height: 20rem;
     width: auto;
     margin: 10rem 0 0 0; }
+    @media screen and (max-width: 768px) {
+      .section1-Acerca__imagen {
+        width: 10rem; } }
   .section1-Acerca__bloque {
     margin: 10rem 0 0 3rem;
     text-align: justify;
     color: #F2F2F2;
     width: 40rem; }
+    @media screen and (max-width: 425px) {
+      .section1-Acerca__bloque {
+        width: 40rem; } }
   .section1-Acerca__ingresar {
     margin-left: 31rem; }
+    @media screen and (max-width: 425px) {
+      .section1-Acerca__ingresar {
+        margin-left: 30rem; } }
+  @media screen and (max-width: 425px) {
+    .section1-Acerca__texto {
+      font-size: 3rem; } }
 
 .section2-significado {
   height: auto;
@@ -425,9 +458,13 @@ body {
   border: solid #8C8C8C; }
   .section2-significado__bloque {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     margin-bottom: 5rem; }
+    @media screen and (max-width: 425px) {
+      .section2-significado__bloque {
+        display: flex;
+        flex-direction: column; } }
   .section2-significado__bloque1 {
     margin: 5rem; }
   .section2-significado__titulo {
@@ -451,6 +488,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
+    @media screen and (max-width: 425px) {
+      .section3-atencion__bloque {
+        display: flex;
+        flex-direction: column; } }
   .section3-atencion__bloque1 {
     margin: 10rem; }
   .section3-atencion__titulo {
@@ -459,14 +500,16 @@ body {
     line-height: 3.125rem;
     color: #F2F2F2; }
   .section3-atencion__imagen {
-    height: auto;
-    width: 40rem; }
+    height: 40rem;
+    width: auto; }
   .section3-atencion__ingresar {
     margin-left: 15rem; }
   .section3-atencion__texto {
     width: 40rem;
     text-align: justify;
     color: #F2F2F2; }
+  .section3-atencion__parrafo {
+    margin-top: 10rem; }
 
 .section1-contacto {
   display: flex;
@@ -475,12 +518,21 @@ body {
   justify-content: space-between;
   color: #252526; }
   .section1-contacto__imagen {
-    height: 40rem;
-    width: 40rem; }
+    height: 30rem;
+    width: 30rem; }
+    @media screen and (max-width: 768px) {
+      .section1-contacto__imagen {
+        margin-left: 7rem; } }
   .section1-contacto__formulario {
     margin: 10% 10% 10% 0;
     background-color: #8C8C8C;
     height: 50%; }
+    @media screen and (max-width: 425px) {
+      .section1-contacto__formulario {
+        margin: 2rem; } }
+    @media screen and (max-width: 768px) {
+      .section1-contacto__formulario {
+        margin: 5rem 15rem; } }
   .section1-contacto .inputcaja {
     color: #F2F2F2;
     padding: 0.625rem; }
@@ -723,6 +775,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .section1-quienes {
+      display: flex;
+      flex-direction: column; } }
   .section1-quienes__imagen {
     margin-left: 10%;
     width: 60%; }
@@ -731,36 +787,16 @@ body {
     margin-right: 15rem;
     text-align: justify;
     color: #F2F2F2; }
-  @media screen and (max-width: 768px) {
-    .section1-quienes {
-      display: flex;
-      flex-direction: column; }
-      .section1-quienes__imagen {
-        width: 50%; }
+    @media screen and (max-width: 425px) {
       .section1-quienes__texto {
-        width: 100%;
+        width: 25rem;
         text-align: justify;
-        font-size: 1rem; }
-      .section1-quienes__titulo {
-        font-size: 2rem;
-        text-align: start; }
-      .section1-quienes * {
-        font-size: 13px; } }
-  @media screen and (max-width: 425px) {
-    .section1-quienes {
-      display: flex;
-      flex-direction: column;
-      margin: 1rem; }
+        font-size: 1rem; } }
+  .section1-quienes__imagen {
+    width: 50%; }
+    @media screen and (max-width: 425px) {
       .section1-quienes__imagen {
-        margin-top: 4rem;
-        width: 80%; }
-      .section1-quienes__texto {
-        width: 100%;
-        text-align: justify;
-        font-size: 1rem; }
-      .section1-quienes__titulo {
-        font-size: 2rem;
-        text-align: start; } }
+        width: 20%; } }
 
 .section2-importancia {
   height: auto;

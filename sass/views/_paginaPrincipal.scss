@@ -20,6 +20,7 @@
     margin-top:1rem;
   }
 
+
   /*Seccion1*/
     .section1-slider {   
         margin-bottom: 5rem;
@@ -41,6 +42,7 @@
                       
        }
     }
+
 
     /*Seccion 2*/
     .section2-pasos{
@@ -67,6 +69,10 @@
             padding-bottom: 1rem;
             margin-bottom: 1rem;
             color: $colorfondo;
+
+            @include movil {
+                font-size: 2rem;
+            }
         }
 
         .sec-title h1:before {
@@ -116,6 +122,10 @@
 
         .sec-title.centered {
             text-align: center;
+            @include movil {
+                width: 35rem;
+            }
+            
         }
 
         .sec-title .text {
@@ -151,6 +161,17 @@
             position: relative;
             margin-bottom: 2.5rem;
             padding: 0 4.0625rem;
+
+            @include movil {
+            padding: 1rem;
+            width: 100%;
+            }
+
+            @include tablet {
+                padding: 1rem;
+                width: 100%;
+                }
+
         }
 
         .process-block .inner-box {
@@ -165,6 +186,10 @@
             background-color: #ffffff;
             text-align: center;
             transition: .5s ease;
+
+            @include movil {
+                padding: 1rem;
+            }
         }
 
         .process-block .inner-box:hover {
@@ -256,6 +281,8 @@
             -o-animation-iteration-count: infinite;
             -o-animation-timing-function: linear;
         }
+
+        
     }
         
 
@@ -295,7 +322,12 @@
             width: 60%;
             height: auto;
             padding: 1.875rem;
-            margin-left: 160px;
+            margin-left: 10rem;
+            
+            @include movil {
+                margin: 0;
+                width: 100%;
+            }
         }
 
         @keyframes cambio {
@@ -327,76 +359,61 @@
         
     }
 
+
     /*Seccion 4*/
     .section4-wrapper {
         &__wrapper{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            position: relative;   
-        }
+        display: flex;
+        flex-direction: row;
+        position: relative;        
+    }
        
         .typing-demo {
-        width: 62%;
-        height: 4rem;
-        animation: typing 2s steps(22), blink .5s step-end infinite;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
-        font-family: poppins;
-        font-size: 3rem;
-        color: $colorletra;
-        margin-top: 10rem;   
+            width: 62%;
+            height: 4rem;
+            animation: typing 2s steps(22), blink .5s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: poppins;
+            font-size: 3rem;
+            color: $colorletra;
+            margin-top: 10rem; 
+
+            @include movil {
+                width: 100%;
+                font-size: 2rem;  
+            } 
+
+            @include tablet {
+                width: 80%;
+                font-size: 2.5rem; 
+            } 
         }
 
         @keyframes typing {
             from {
                 width: 0
             }
-        }
-
-        @keyframes blink {
+            }
+    
+            @keyframes blink {
             50% {
                 border-color: transparent;
             }
-        }
-      
-    }
-
-    @include tablet {
-        .typing-demo {
-            width: 50%;
-            height: 2rem;           
-            font-size: 1rem;
-            color: $colorletra;
-            margin-top: 10rem; 
-            border: solid red;  
             }
+        .rounded{
+            width: 22rem;
+            position: absolute;
+            right: 3rem;
+            margin-top: 10rem;
+            
+            @include movil {
+                margin-top: 17rem;
+            }
+
+            @include tablet {
+                margin-top: 12rem;
+            }        
+        }
      }
-
- 
-    @include movil {
-        display: flex;
-        flex-direction: column;
-        padding: 10rem;
-
-        .typing-demo {
-        width: 100%;
-        font-size: 1rem;        
-        } 
-    }
-
-    .rounded{
-        width: 22rem;
-        position: absolute;
-        right: 3rem;
-        margin-top: 10rem;
-
-        @include tablet {
-            right: 1rem;
-            width: 18rem;
-        }        
-    }
-
-
-

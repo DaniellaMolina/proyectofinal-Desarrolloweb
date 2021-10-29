@@ -7,10 +7,26 @@
   flex-direction: row-reverse;
   justify-content: space-between;
 
+  @include movil {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
     &__imagen {
     height: 20rem;
     width: auto;
     margin: 10rem 0 0 0;
+
+    @include tablet {
+      width: 10rem;
+    }
+
+
     }
 
     &__bloque {
@@ -18,11 +34,25 @@
     text-align: justify;
     color: #F2F2F2;
     width: 40rem;
+
+    @include movil{
+      width: 40rem;
+    }
     }
 
     &__ingresar{
       margin-left: 31rem;
+
+      @include movil{
+       margin-left: 30rem;
+      }
     } 
+
+    &__texto {
+      @include movil {
+        font-size: 3rem;
+      }
+    }
 
   }
 
@@ -34,13 +64,21 @@
 
     &__bloque{
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       justify-content: space-between;
       margin-bottom: 5rem;
+
+      @include movil {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     &__bloque1{
       margin: 5rem;
+      @include movil {
+
+      }
     }
 
     &__titulo{
@@ -73,6 +111,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include movil {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__bloque1{
@@ -87,8 +130,8 @@
   }
 
   &__imagen{
-    height: auto;
-    width: 40rem;
+    height: 40rem;
+    width: auto;
   }
 
   &__ingresar{
@@ -99,5 +142,9 @@
     width: 40rem;
     text-align: justify;
     color: $colorletra;
+  }
+
+  &__parrafo{
+    margin-top: 10rem;
   }
 }

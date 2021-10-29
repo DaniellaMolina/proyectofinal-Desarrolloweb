@@ -9,13 +9,26 @@
       color: $colorfondo;
       
       &__imagen {
-      height: 40rem;
-      width: 40rem;
+      height: 30rem;
+      width: 30rem;
+
+      @include tablet {
+          margin-left: 7rem;
+      }
     }
       &__formulario {
         margin: 10% 10% 10% 0;
         background-color: $grisclaro;
         height: 50%;
+
+        @include movil {
+            margin: 2rem;
+        }
+
+        @include tablet {
+            margin: 5rem 15rem;
+        }
+        
     }
 
     .inputcaja {
