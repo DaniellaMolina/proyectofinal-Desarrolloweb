@@ -1,51 +1,107 @@
 @import "../utilities/variables";
 
 .section1-quienes {
-  margin: 6rem;
-  height: auto;
+  margin: 3rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 
-    @include tablet {
-      display: flex;
-      flex-direction: column;
-    }
-      
-      &__imagen {
-      margin-left: 10%;
-      width: 60%;
-      }
-
-      &__texto {
-      margin-top: 3rem;
-      margin-right: 15rem;
-      text-align: justify;
-      color: #F2F2F2;
-
-        @include movil {
-          width: 25rem;
-          text-align: justify;
-          font-size: 1rem;
-        }
-      }
-
+  @include movil {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 54rem;
+  }
   
-        &__imagen {
-          width: 50%;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  &__imagen {
+  margin: 2rem 0 0 2rem;
+  width: 20rem;
+  height: 30rem;
 
-          @include movil {
-            width: 20%;
-          }
-          }
-        
+  @include movil {
+    margin: 5rem 0 5rem 20rem;
+  }
+
+  @include tablet {
+    margin: 5rem 0 5rem 15rem;
+    width: 30rem;
+    height: 40rem;
+  }
+ }
+  &__bloque {
+    margin-top: 10rem;
+  }
+
+  &__texto {
+  text-align: justify;
+  color: $colorletra;
+  width: 40rem;
+  position: sticky;
+    
+    @include tablet {
+      width: 40rem;
+      text-align: justify;
+      font-size: 2rem;
+      position: relative;
+      margin: 5rem;
+    }
+  }
+
+  &__titulo {
+    margin-bottom: 2rem;
+    font-size: $titulo;
+    font-weight: 800;
+    line-height: 3.125rem;
+    letter-spacing: 0;
+    width: 45rem;
+    position: sticky;
+
+    @include tablet {
+      position: relative;
+      margin: 0 0 0 3rem;
+
+    }
+  }
+
+
+  &__circulo {
+    position: absolute;
+    margin: 0 0 10rem 40rem;
+    width: 30rem;
+    height: auto;
+
+    @include movil{
+      margin: 35rem 0;
+    }
+
+    @include tablet {
+      margin: 45rem 0;
+    }
+  }
+
+  @include tablet {
+    &__ingresar{
+      margin-left: 0rem;
+      width: 20rem;
+      height: 5rem;
+      font-size: 2rem;
       }
-
+  }
+    
+}
   
 .section2-importancia {
   height: auto;
-  background-color: $grisclaro;
-  border: solid $grisclaro;
+  background-color: $amarillo;
+  border: solid $amarillo;
+  
 
   &__bloque{
     display: flex;
@@ -62,7 +118,7 @@
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 3.125rem;
-    color: $colorfondo;
+    color: $colorletra;
   }
 
   &__imagen{
@@ -87,7 +143,7 @@
     }
 
     &__imagen{
-      width: 100%;
+      width: 80%;
     }
   }
 
@@ -98,23 +154,159 @@
       flex-wrap: wrap;
     }
     &__texto{
-      width: 100%;
+      width: 60%;
       text-align: justify;
+      font-size: 3rem;
     }
+
+    &__titulo{
+      font-size: 4rem;
+      width: 60%;
+      line-height: 5rem;
+    }
+
     &__imagen{
-      width: 100%;
+      width: 70%;
     }
+
     &__ingresar{
-      margin-left: 1rem;
+    margin-left: 0rem;
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+    }
+  }
+
+  @include tablet{
+    &__bloque{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &__texto{
+      width: 60%;
+      text-align: justify;
+      font-size: 3rem;
+    }
+
+    &__titulo{
+      font-size: 4rem;
+      width: 60%;
+      line-height: 5rem;
+    }
+
+    &__imagen{
+      width: 60%;
+    }
+
+    &__ingresar{
+    margin-left: 0rem;
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
     }
   }
 }
 
+.section3-quienes {
+  margin: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include movil {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 54rem;
+    border: solid red;
+  }
+  
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  &__imagen {
+  margin: 2rem 0 0 ;
+  width: 30rem;
+  height: auto;
+
+  @include movil {
+    margin: 5rem 0 5rem 20rem;
+  }
+
+  @include tablet {
+    margin: 5rem 0 5rem 20rem;
+  }
+ }
+
+ &__bloque {
+  margin-top: 10rem;
+}
+
+  &__texto {
+  text-align: justify;
+  color: $colorletra;
+  width: 40rem;
+  position: sticky;
+    
+    @include tablet {
+      width: 40rem;
+      text-align: justify;
+      font-size: 2rem;
+      position: relative;
+      margin: 5rem;
+    }
+  }
+
+  &__titulo {
+    margin-bottom: 2rem;
+    font-size: $titulo;
+    font-weight: 800;
+    line-height: 3.125rem;
+    letter-spacing: 0;
+    width: 45rem;
+    position: sticky;
+
+    @include tablet {
+      position: relative;
+      margin: 0 0 0 3rem;
+
+    }
+  }
+
+  &__circulo {
+    position: absolute;
+    margin: 0 0 10rem 45rem;
+    width: 35rem;
+    height: auto;
+
+    @include movil{
+      margin: 35rem 0;
+    }
+
+    @include tablet {
+      margin: 35rem 0;
+    }
+  }
+  
+  @include tablet {
+    &__ingresar{
+      margin-left: 0rem;
+      width: 20rem;
+      height: 5rem;
+      font-size: 2rem;
+      }
+  }
+}
 
 /*Services Styles*/
 .services {
   position: relative;
-  width: 75rem;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,27 +317,36 @@
   justify-content: center;
   min-height: 100vh;
   background: $colorfondo;
-  margin: 80px;
+  margin: 5rem;
+  overflow: hidden;
 
-  &__bloque1 {
+  @include tablet {
     display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    width: 40rem;
   }
 
-  &__texto {
+  &__titulo {
     color: $colorletra;
-    font-size: $titulos;
     margin: 15rem 0 0 10rem;
+    font-size: $titulo;
+    font-weight: 800;
+    line-height: 3.125rem;
+    color: $colorletra;
   }
+  
 
   &__imagen{
     height: 25rem;
     margin-left: 5rem;
   }
+
   &__box {
     position: relative;
     width: 21.875rem;
     height: 17.5rem;
-    background: $grisclaro;
+    background: $amarillo;
     border-radius: 1.25rem;
     overflow: hidden;
 
@@ -178,14 +379,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--i);
+    background: $amarillo;
     transition: 0.5s;
     z-index: 2;
     transition-delay: 0.25s;
 
     & ion-icon {
       font-size: 4rem;
-      color: #fff;
+      color: $colorletra;
       font-weight: bold;
       transition: 0.5s;
       transition-delay: 0s;
@@ -194,7 +395,7 @@
 
   &__content {
     position: relative;
-    color: #fff;
+    color: $colorletra;
     padding: 1.25rem;
     text-align: center;
     margin-top: 6.25rem;

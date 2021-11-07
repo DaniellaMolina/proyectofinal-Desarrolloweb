@@ -22,25 +22,16 @@
 
 
   /*Seccion1*/
-    .section1-slider {   
-        margin-bottom: 5rem;
+    .section1-gif {  
+        background-color: #222222; 
+        
         &__imagen{
           object-fit: cover;
-          height: 40rem;           
+          width: 90%;
+           
         }
 
-        @include tablet {
-             &__imagen {
-                width: 100%;  
-             }
-        }
-
-        @include movil {
-            &__imagen {
-               width: 100%;  
-            }
-                      
-       }
+   
     }
 
 

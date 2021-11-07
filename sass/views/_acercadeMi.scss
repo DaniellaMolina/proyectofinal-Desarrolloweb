@@ -26,13 +26,12 @@
       width: 10rem;
     }
 
-
     }
 
     &__bloque {
     margin: 10rem 0 0 3rem;
     text-align: justify;
-    color: #F2F2F2;
+    color: $colorletra;
     width: 40rem;
 
     @include movil{
@@ -40,6 +39,12 @@
     }
     }
 
+    &__circulo {
+      position: absolute;
+      margin: 0 5rem 15rem 0rem;
+      width: 35rem;
+      height: auto;
+    }
     &__ingresar{
       margin-left: 31rem;
 
@@ -47,8 +52,14 @@
        margin-left: 30rem;
       }
     } 
-
+    &__bloque {
+      position: sticky;
+      margin: 5rem 0 5rem 3rem;
+    }
     &__texto {
+      text-align: justify;
+      color: $colorletra;
+      width: 40rem;
       @include movil {
         font-size: 3rem;
       }
@@ -59,8 +70,8 @@
   
   .section2-significado {
     height: auto;
-    background-color: $grisclaro;
-    border: solid $grisclaro;
+    background-color: $verde;
+    border: solid $verde;
 
     &__bloque{
       display: flex;
@@ -85,7 +96,7 @@
       font-size: 2.5rem;
       font-weight: 800;
       line-height: 3.125rem;
-      color: $colorfondo;
+      color: $colorletra;
     }
 
     &__imagen{
@@ -105,21 +116,13 @@
 }
 
 .section3-atencion {
-  height: auto;
-
-  &__bloque{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+   
+  @include movil {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    @include movil {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  &__bloque1{
-    margin: 10rem;
+    flex-direction: column;
   }
 
   &__titulo{
@@ -130,7 +133,7 @@
   }
 
   &__imagen{
-    height: 40rem;
+    height: 30rem;
     width: auto;
   }
 
@@ -138,13 +141,13 @@
     margin-left: 15rem;
   }
 
-  &__texto{
+  &__parrafo{
+    position: sticky;
+    margin: 10rem;
     width: 40rem;
-    text-align: justify;
-    color: $colorletra;
   }
 
-  &__parrafo{
-    margin-top: 10rem;
+  &__circulo {
+    position: absolute;
   }
 }
