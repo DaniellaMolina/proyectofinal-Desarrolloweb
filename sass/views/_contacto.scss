@@ -8,57 +8,6 @@
       justify-content: space-between;
       color: $colorfondo;
       
-      &__imagen {
-      height: 30rem;
-      width: 30rem;
 
-      @include tablet {
-          margin-left: 7rem;
-      }
-    }
-      &__formulario {
-        margin: 10% 10% 10% 0;
-        background-color: $grisclaro;
-        height: 50%;
-
-        @include movil {
-            margin: 2rem;
-        }
-
-        @include tablet {
-            margin: 5rem 15rem;
-        }
-        
-    }
-
-    .inputcaja {
-        color: $colorletra;
-        padding: 0.625rem;
-    }
-
-    .textarea {
-        margin-left: 0.75rem;
-        height: 12.5rem;
-        width: 26.25rem;
-    }
-
-    .tituloContacto {
-        margin-left: 25%;
-        color: $colorletra;
-    }
-
-    .recaptcha {
-        margin-left: 0.75rem;
-    }
-
-    .g-recaptcha {
-        margin-bottom: 0.9375rem;
-    }
-
-    @include tablet {
-        .section1-contacto {
-        display: flex;
-        flex-direction: column;
-        }
-    }
   }
+

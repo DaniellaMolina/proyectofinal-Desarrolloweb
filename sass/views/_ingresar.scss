@@ -17,7 +17,7 @@
         }
 
         .link:hover {
-            color: $grisclaro;
+            color: $colorfondo;
         }
 
         p {
@@ -68,7 +68,7 @@
             padding: 0;
             margin: 0.625rem auto;
             cursor: pointer;
-            background-color: $grisclaro;
+            background-color: $colorfondo;
         }
 
         .checkbox:checked+label:before,
@@ -78,7 +78,7 @@
             width: 2.25rem;
             height: 2.25rem;
             border-radius: 50%;
-            background-color: $grisclaro;
+            background-color: $colorfondo;
             content: '\eb4f';
             z-index: 20;
             top: -0.625rem;
@@ -120,7 +120,7 @@
         .card-back {
             width: 100%;
             height: 100%;
-            background-color: $grisclaro;
+            background-color: $colorfondo;
             background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
             background-position: bottom center;
             background-repeat: no-repeat;
@@ -267,18 +267,18 @@
             text-align: center;
             border: none;
             background-color: $colorletra;
-            color: $grisbotones;
+            color: $colorfondo;
             box-shadow: 0 0.5rem 1.5rem 0 rgba(255, 235, 167, .2);
         }
 
         .btn:active,
         .btn:focus {
-            background-color: $grisclaro;
+            background-color: $colorfondo;
             box-shadow: 0 0.5rem 1.5rem 0 rgba(16, 39, 112, .2);
         }
 
         .btn:hover {
-            background-color: $grisclaro;
+            background-color: $colorfondo;
             box-shadow: 0 0.5rem 1.5rem 0 rgba(16, 39, 112, .2);
         }
 }

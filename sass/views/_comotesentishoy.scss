@@ -20,7 +20,7 @@ margin: 6rem 0 5rem 6rem;
     color: $colorletra;
   }
 
-  #container{
+  #container-scale{
     position: relative;
     display: inline-block;
     text-align: center;
@@ -65,7 +65,7 @@ margin: 6rem 0 5rem 6rem;
   }
   
   #needle{
-    fill: $grisclaro;
+    fill: $colorletra;
   }
   
   .faces{
@@ -102,7 +102,7 @@ margin: 6rem 0 5rem 6rem;
     -webkit-appearance: none;
     border-radius: 0.625rem;
     height: 0.9375rem;
-    background-color: $grisclaro; 
+    background-color: $colorletra; 
   }
   
   #slider::-webkit-slider-thumb {
