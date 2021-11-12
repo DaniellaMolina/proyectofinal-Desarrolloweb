@@ -27,8 +27,8 @@
   max-width: 1920px;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  grid-auto-rows: 1fr;
+  grid-template-rows: 3rem auto auto;
+  grid-auto-rows: auto;
   grid-auto-flow: row;
   grid-gap: 3rem;
   grid-template-areas: "header" "main" "footer"; }
@@ -43,6 +43,7 @@ main {
   grid-template-rows: auto auto auto auto;
   grid-auto-rows: 1fr;
   grid-auto-flow: row;
+  grid-gap: 3rem;
   grid-template-areas: "section1" "section2" "section3" "section4"; }
 
 .section1 {
@@ -78,14 +79,6 @@ footer {
 
 body {
   background-color: #F2F2F2; }
-
-@media screen and (max-width: 768px) and (max-width: 768px) {
-  * {
-    font-size: 13px; } }
-
-@media screen and (max-width: 425px) and (max-width: 425px) {
-  * {
-    font-size: 10px; } }
 
 /*Themes*/
 .page_404 {
@@ -139,22 +132,38 @@ body {
 
 /*Seccion1*/
 .section1-gif {
-  background-color: #222222; }
+  background-color: #222222;
+  border: solid red;
+  margin-top: .2rem; }
+  @media screen and (max-width: 768px) {
+    .section1-gif {
+      height: 30rem; } }
   .section1-gif__imagen {
     object-fit: cover;
     width: 90%; }
+    @media screen and (max-width: 768px) {
+      .section1-gif__imagen {
+        padding-top: 5rem; } }
 
 /*Seccion 2*/
 .section2-pasos {
-  margin: 10rem 0 10rem 0; }
+  margin: 10rem 0 10rem 0;
+  padding: 5rem;
+  border: solid blue; }
+  @media screen and (max-width: 425px) {
+    .section2-pasos {
+      margin-top: 0; } }
   .section2-pasos__titulo {
     margin-bottom: 5rem; }
 
 .card {
-  padding: 40px 20px;
+  padding: 2.5rem 1.25rem;
   position: relative;
   display: block;
   background: #9a93a7; }
+  @media screen and (max-width: 425px) {
+    .card {
+      margin-bottom: 5rem; } }
 
 .card:after {
   content: "";
@@ -219,75 +228,62 @@ body {
 /*Seccion 3*/
 .section3-testimonios {
   height: auto;
-  background-color: #9a93a7; }
+  background-color: #9a93a7;
+  border: solid green; }
+  @media screen and (max-width: 425px) {
+    .section3-testimonios {
+      width: 100%; } }
   .section3-testimonios__titulo {
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 3.125rem;
-    margin-bottom: 1.875rem;
+    margin: 0 0 2rem 4rem;
     color: #F2F2F2; }
-  .section3-testimonios__testimonios {
-    width: 80%;
-    margin: auto;
-    overflow: hidden; }
-  .section3-testimonios__testimoniosUl {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: cambio 20s infinite;
-    animation-timing-function: ease-in; }
-  .section3-testimonios__testimoniosLi {
-    width: 100%;
-    list-style: none; }
-  .section3-testimonios__imagen {
-    width: 60%;
-    height: auto;
-    padding: 1.875rem;
-    margin-left: 10rem; }
+  .section3-testimonios .carousel {
+    width: 45rem;
+    margin-left: 20rem; }
     @media screen and (max-width: 425px) {
-      .section3-testimonios__imagen {
-        margin: 0;
+      .section3-testimonios .carousel {
+        width: 100%;
+        margin: 0; } }
+    @media screen and (max-width: 768px) {
+      .section3-testimonios .carousel {
+        margin-left: 0;
         width: 100%; } }
-
-@keyframes cambio {
-  0% {
-    margin-left: 0; }
-  34% {
-    margin-left: 0; }
-  35% {
-    margin-left: -100%; }
-  65% {
-    margin-left: -100%; }
-  66% {
-    margin-left: -200%; }
-  100% {
-    margin-left: -200%; } }
 
 /*Seccion 4*/
 .section4-wrapper__wrapper {
   display: flex;
   flex-direction: row;
-  position: relative; }
+  position: relative;
+  width: 55rem;
+  margin: 1rem;
+  border: solid yellow; }
+  @media screen and (max-width: 425px) {
+    .section4-wrapper__wrapper {
+      width: 17rem;
+      overflow: hidden; } }
+  @media screen and (max-width: 768px) {
+    .section4-wrapper__wrapper {
+      width: 22rem;
+      overflow: hidden; } }
 
 .section4-wrapper .typing-demo {
-  width: 62%;
+  width: 100%;
   height: 4rem;
   animation: typing 2s steps(22), blink 0.5s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: poppins;
   font-size: 3rem;
   color: #252526;
   margin-top: 10rem; }
-  @media screen and (max-width: 425px) {
-    .section4-wrapper .typing-demo {
-      width: 100%;
-      font-size: 2rem; } }
   @media screen and (max-width: 768px) {
     .section4-wrapper .typing-demo {
-      width: 80%;
-      font-size: 2.5rem; } }
+      width: 70%;
+      font-size: .8rem;
+      height: 1.5rem;
+      overflow: hidden; } }
 
 @keyframes typing {
   from {
@@ -302,12 +298,11 @@ body {
   position: absolute;
   right: 3rem;
   margin-top: 10rem; }
-  @media screen and (max-width: 425px) {
-    .section4-wrapper .rounded {
-      margin-top: 17rem; } }
   @media screen and (max-width: 768px) {
     .section4-wrapper .rounded {
-      margin-top: 12rem; } }
+      width: 13rem;
+      margin-top: 15rem;
+      margin-left: 3rem; } }
 
 .section1-Acerca {
   margin-bottom: 3.5rem;
@@ -419,7 +414,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  color: #F2F2F2; }
+  color: #c6f3ff; }
 
 .section1__ingresar {
   margin-top: 8rem; }
@@ -431,7 +426,7 @@ body {
   .section1__ingresar .link {
     color: #252526; }
   .section1__ingresar .link:hover {
-    color: #F2F2F2; }
+    color: #e7b1d7; }
   .section1__ingresar p {
     font-weight: 500;
     line-height: 1.7; }
@@ -471,7 +466,7 @@ body {
     padding: 0;
     margin: 0.625rem auto;
     cursor: pointer;
-    background-color: #F2F2F2; }
+    background-color: #e7b1d7; }
   .section1__ingresar .checkbox:checked + label:before,
   .section1__ingresar .checkbox:not(:checked) + label:before {
     position: absolute;
@@ -479,7 +474,7 @@ body {
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 50%;
-    background-color: #F2F2F2;
+    background-color: #e7b1d7;
     content: '\eb4f';
     z-index: 20;
     top: -0.625rem;
@@ -489,7 +484,7 @@ body {
     font-size: 1.5rem;
     transition: all 0.5s ease; }
   .section1__ingresar .checkbox:checked + label:before {
-    transform: translateX(44px) rotate(-270deg); }
+    transform: translateX(2.75rem) rotate(-270deg); }
   .section1__ingresar .card-3d-wrap {
     position: relative;
     width: 27.5rem;
@@ -512,7 +507,7 @@ body {
   .section1__ingresar .card-back {
     width: 100%;
     height: 100%;
-    background-color: #F2F2F2;
+    background-color: #e7b1d7;
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
     background-position: bottom center;
     background-repeat: no-repeat;

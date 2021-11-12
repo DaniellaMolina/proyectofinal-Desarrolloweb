@@ -4,8 +4,8 @@
       max-width: 1920px;
       display: grid;
       grid-template-columns: auto;
-      grid-template-rows: auto auto auto;
-      grid-auto-rows: 1fr;
+      grid-template-rows: 3rem auto auto;
+      grid-auto-rows: auto;
       grid-auto-flow: row;
       grid-gap: 3rem;
       grid-template-areas:
@@ -26,6 +26,7 @@
     grid-template-rows: auto auto auto auto;
     grid-auto-rows: 1fr;
     grid-auto-flow: row;
+    grid-gap: 3rem;
     grid-template-areas: 
     "section1"
     "section2"

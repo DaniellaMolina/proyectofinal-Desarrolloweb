@@ -3,21 +3,3 @@
 body{
     background-color: $colorfondo;
 }
-
-@include tablet {
-    @include tablet {
-        *{
-            font-size: 13px;
-        }
-    }
-    
-}
-
-@include movil {
-    @include movil {
-        *{
-            font-size: 10px;
-        }
-    }
-    
-}

@@ -25,10 +25,19 @@
     /*Seccion1*/
     .section1-gif {  
         background-color: #222222; 
+        border: solid red;
+        margin-top: .2rem;
         
+        @include tablet {
+          height: 30rem;
+        }
+
         &__imagen{
           object-fit: cover;
           width: 90%;
+          @include tablet {
+            padding-top: 5rem;
+          }
         }  
     }
 
@@ -37,16 +46,27 @@
 
     .section2-pasos{
         margin: 10rem 0 10rem 0;
+        padding: 5rem;
+        border: solid blue;
+       
+        @include movil {
+        margin-top: 0;
+       }
 
         &__titulo {
-            margin-bottom: 5rem;
+        margin-bottom: 5rem;
         }
+
     }
     .card{
-        padding: 40px 20px;
+        padding: 2.5rem 1.25rem;
         position: relative;
         display: block;
         background: $violeta;
+        
+        @include movil {
+        margin-bottom: 5rem;
+            }
       }
       .card:after{
         content:"";
@@ -101,7 +121,8 @@
         opacity: 0;
         border-radius: 2px;
       }
-      .card:hover a{
+
+        .card:hover a{
         transform: translateY(0px);
         opacity: 1;
       }
@@ -115,104 +136,73 @@
     .section3-testimonios {
         height: auto;
         background-color: $violeta;
+        border: solid green;
+
+        @include movil {
+          width: 100%;
+        }
 
         &__titulo {
         font-size: 2.5rem;
         font-weight: 800;
         line-height: 3.125rem;
-        margin-bottom: 1.875rem;
+        margin: 0 0 2rem 4rem;
         color: $colorfondo;
         }
 
-        &__testimonios {
-            width: 80%;
-            margin: auto;
-            overflow: hidden; 
-        }
+        .carousel {
+            width: 45rem;
+            margin-left: 20rem;
 
-        &__testimoniosUl {
-            display: flex;
-            padding: 0;
-            width: 400%;
-            animation: cambio 20s infinite;
-            animation-timing-function: ease-in;
-        }
-
-        &__testimoniosLi {
-            width: 100%;
-            list-style: none;
-        }
-
-        &__imagen {
-            width: 60%;
-            height: auto;
-            padding: 1.875rem;
-            margin-left: 10rem;
-            
             @include movil {
-                margin: 0;
-                width: 100%;
+              width: 100%;
+              margin: 0;         
+            }
+            @include tablet {
+              margin-left: 0;
+              width: 100%;
             }
         }
-
-        @keyframes cambio {
-            0% {
-                margin-left: 0;
-            }
-
-            34% {
-                margin-left: 0;
-            }
-
-            35% {
-                margin-left: -100%;
-            }
-
-            65% {
-                margin-left: -100%;
-            }
-
-            66% {
-                margin-left: -200%;
-            }
-
-            100% {
-                margin-left: -200%;
-            }
-        }
-
-        
+    
     }
-
-
+  
     /*Seccion 4*/
     .section4-wrapper {
         &__wrapper{
         display: flex;
         flex-direction: row;
-        position: relative;        
+        position: relative; 
+        width: 55rem;
+        margin: 1rem;
+        border: solid yellow; 
+        
+        @include movil {
+          width: 17rem;
+          overflow: hidden;
+        }
+
+        @include tablet {
+          width: 22rem;
+          overflow: hidden;
+        }
     }
        
         .typing-demo {
-            width: 62%;
+            width: 100%;
             height: 4rem;
             animation: typing 2s steps(22), blink .5s step-end infinite;
             white-space: nowrap;
             overflow: hidden;
             border-right: 3px solid;
-            font-family: poppins;
             font-size: 3rem;
             color: $colorletra;
             margin-top: 10rem; 
 
-            @include movil {
-                width: 100%;
-                font-size: 2rem;  
-            } 
-
             @include tablet {
-                width: 80%;
-                font-size: 2.5rem; 
+                width: 70%;
+                font-size: .8rem;
+                height: 1.5rem;
+                overflow: hidden;
             } 
         }
 
@@ -232,13 +222,11 @@
             position: absolute;
             right: 3rem;
             margin-top: 10rem;
-            
-            @include movil {
-                margin-top: 17rem;
-            }
 
             @include tablet {
-                margin-top: 12rem;
+              width: 13rem;
+                margin-top: 15rem;
+                margin-left: 3rem;
             }        
         }
      }
