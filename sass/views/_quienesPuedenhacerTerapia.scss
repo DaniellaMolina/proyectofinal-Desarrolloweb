@@ -10,33 +10,43 @@
   @include movil {
     display: flex;
     flex-direction: column;
-    height: auto;
-    width: 54rem;
-  }
-  
-  @include tablet {
-    display: flex;
-    flex-direction: column;
-    height: auto;
+    width: 20rem;
+    margin: 0;
+    
   }
   
   &__imagen {
   margin: 2rem 0 0 2rem;
   width: 20rem;
   height: 30rem;
-
+  
   @include movil {
-    margin: 5rem 0 5rem 20rem;
+    width: 20rem;
+    height: auto;
+    margin-left: 10rem;
   }
 
   @include tablet {
-    margin: 5rem 0 5rem 15rem;
+    margin-left: 5rem;
     width: 30rem;
-    height: 40rem;
+    height: auto;
   }
  }
+
   &__bloque {
     margin-top: 10rem;
+    
+    @include movil {
+      width: 20rem;
+      margin-top: 5rem;
+      margin-left: 4rem;
+      overflow: hidden;
+    }
+    @include tablet{
+      width: 40rem;
+      margin-top: 5rem;
+      overflow: hidden;
+    }
   }
 
   &__texto {
@@ -45,12 +55,12 @@
   width: 40rem;
   position: sticky;
     
+
     @include tablet {
       width: 40rem;
       text-align: justify;
       font-size: 2rem;
       position: relative;
-      margin: 5rem;
     }
   }
 
@@ -65,8 +75,7 @@
 
     @include tablet {
       position: relative;
-      margin: 0 0 0 3rem;
-
+      font-size: 2rem;
     }
   }
 
@@ -77,22 +86,28 @@
     width: 30rem;
     height: auto;
 
-    @include movil{
-      margin: 35rem 0;
-    }
 
     @include tablet {
-      margin: 45rem 0;
+      width: 40rem;
+      margin: 50rem 2rem 0 0;
     }
   }
-
-  @include tablet {
-    &__ingresar{
-      margin-left: 0rem;
-      width: 20rem;
+  
+  &__ingresar{
+    @include movil {
+      margin-left: 5rem;
+      width: 22rem;
       height: 5rem;
       font-size: 2rem;
-      }
+      margin-top: 8rem;
+    }
+    @include tablet {
+      width: 15rem;
+      height: 5rem;
+      font-size: 2rem;
+      margin-top: 8rem;
+    }
+      
   }
     
 }
@@ -101,17 +116,46 @@
   height: auto;
   background-color: $amarillo;
   border: solid $amarillo;
-  
+
+  @include movil {
+    width: 22.5rem;
+    margin: 0;
+  }
+
+  @include tablet {
+    width: 46.5rem;
+    margin: 0;
+    overflow: hidden;
+  }
 
   &__bloque{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5rem;
+
+    @include movil {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__bloque1{
     margin: 5rem;
+    
+    @include movil {
+      margin: 0;
+    }
+
+    @include tablet{
+      margin: 0;
+      padding: 1rem;
+    }
   }
 
   &__titulo{
@@ -124,89 +168,49 @@
   &__imagen{
     height: auto;
     width: 100%;
+
+    @include movil {
+      width: 30rem;
+      margin-left: 6rem;
+    }
+    @include tablet {
+      width: 40rem;
+      margin-left: 6rem;
+      margin-top: 5rem;
+    }
   }
 
   &__ingresar{
     margin-left: 15rem;
+  
+      @include tablet {
+        width: 15rem;
+        height: 5rem;
+        font-size: 2rem;
+        margin-top: 6rem;
+      }
   }
 
   &__texto{
     width: 40rem;
     text-align: justify;
-  }
-
-  @include tablet {
-    &__bloque{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-
-    &__imagen{
-      width: 80%;
-    }
-  }
-
-  @include movil {
-    &__bloque{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    &__texto{
-      width: 60%;
+    
+    @include movil {
+      width: 40rem;
       text-align: justify;
-      font-size: 3rem;
+      font-size: 2rem;
+      position: relative;
     }
 
-    &__titulo{
-      font-size: 4rem;
-      width: 60%;
-      line-height: 5rem;
-    }
-
-    &__imagen{
-      width: 70%;
-    }
-
-    &__ingresar{
-    margin-left: 0rem;
-    width: 20rem;
-    height: 5rem;
-    font-size: 2rem;
-    }
-  }
-
-  @include tablet{
-    &__bloque{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    &__texto{
-      width: 60%;
+    @include tablet {
+      width: 45rem;
       text-align: justify;
-      font-size: 3rem;
-    }
-
-    &__titulo{
-      font-size: 4rem;
-      width: 60%;
-      line-height: 5rem;
-    }
-
-    &__imagen{
-      width: 60%;
-    }
-
-    &__ingresar{
-    margin-left: 0rem;
-    width: 20rem;
-    height: 5rem;
-    font-size: 2rem;
+      font-size: 2rem;
+      position: relative;
     }
   }
-}
+
+   }
 
 .section3-quienes {
   margin: 3rem;
@@ -220,13 +224,16 @@
     flex-direction: column;
     height: auto;
     width: 54rem;
-    border: solid red;
+    margin: 0;
+    
   }
   
   @include tablet {
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 46.5rem;
+    margin: 0;
   }
   
   &__imagen {
@@ -235,12 +242,9 @@
   height: auto;
 
   @include movil {
-    margin: 5rem 0 5rem 20rem;
+    margin-left: 7rem;
   }
 
-  @include tablet {
-    margin: 5rem 0 5rem 20rem;
-  }
  }
 
  &__bloque {
@@ -254,11 +258,10 @@
   position: sticky;
     
     @include tablet {
-      width: 40rem;
+      width: 45rem;
       text-align: justify;
       font-size: 2rem;
       position: relative;
-      margin: 5rem;
     }
   }
 
@@ -273,8 +276,6 @@
 
     @include tablet {
       position: relative;
-      margin: 0 0 0 3rem;
-
     }
   }
 
@@ -306,7 +307,6 @@
 /*Services Styles*/
 .services {
   position: relative;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,11 +320,12 @@
   margin: 5rem;
   overflow: hidden;
 
+
   @include tablet {
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
     width: 40rem;
+    margin: 0;
   }
 
   &__titulo {
@@ -334,6 +335,14 @@
     font-weight: 800;
     line-height: 3.125rem;
     color: $colorletra;
+
+    @include movil {
+      margin: 0;
+    }
+
+    @include tablet {
+      margin: 0;
+    }
   }
   
 

@@ -25,7 +25,6 @@
     /*Seccion1*/
     .section1-gif {  
         background-color: #222222; 
-        border: solid red;
         margin-top: .2rem;
         
         @include tablet {
@@ -47,7 +46,6 @@
     .section2-pasos{
         margin: 10rem 0 10rem 0;
         padding: 5rem;
-        border: solid blue;
        
         @include movil {
         margin-top: 0;
@@ -136,7 +134,7 @@
     .section3-testimonios {
         height: auto;
         background-color: $violeta;
-        border: solid green;
+        
 
         @include movil {
           width: 100%;
@@ -174,7 +172,6 @@
         position: relative; 
         width: 55rem;
         margin: 1rem;
-        border: solid yellow; 
         
         @include movil {
           width: 17rem;

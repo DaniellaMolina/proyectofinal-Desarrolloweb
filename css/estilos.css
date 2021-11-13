@@ -133,7 +133,6 @@ body {
 /*Seccion1*/
 .section1-gif {
   background-color: #222222;
-  border: solid red;
   margin-top: .2rem; }
   @media screen and (max-width: 768px) {
     .section1-gif {
@@ -148,8 +147,7 @@ body {
 /*Seccion 2*/
 .section2-pasos {
   margin: 10rem 0 10rem 0;
-  padding: 5rem;
-  border: solid blue; }
+  padding: 5rem; }
   @media screen and (max-width: 425px) {
     .section2-pasos {
       margin-top: 0; } }
@@ -228,8 +226,7 @@ body {
 /*Seccion 3*/
 .section3-testimonios {
   height: auto;
-  background-color: #9a93a7;
-  border: solid green; }
+  background-color: #9a93a7; }
   @media screen and (max-width: 425px) {
     .section3-testimonios {
       width: 100%; } }
@@ -257,8 +254,7 @@ body {
   flex-direction: row;
   position: relative;
   width: 55rem;
-  margin: 1rem;
-  border: solid yellow; }
+  margin: 1rem; }
   @media screen and (max-width: 425px) {
     .section4-wrapper__wrapper {
       width: 17rem;
@@ -643,27 +639,35 @@ body {
     .section1-quienes {
       display: flex;
       flex-direction: column;
-      height: auto;
-      width: 54rem; } }
-  @media screen and (max-width: 768px) {
-    .section1-quienes {
-      display: flex;
-      flex-direction: column;
-      height: auto; } }
+      width: 20rem;
+      margin: 0; } }
   .section1-quienes__imagen {
     margin: 2rem 0 0 2rem;
     width: 20rem;
     height: 30rem; }
     @media screen and (max-width: 425px) {
       .section1-quienes__imagen {
-        margin: 5rem 0 5rem 20rem; } }
+        width: 20rem;
+        height: auto;
+        margin-left: 10rem; } }
     @media screen and (max-width: 768px) {
       .section1-quienes__imagen {
-        margin: 5rem 0 5rem 15rem;
+        margin-left: 5rem;
         width: 30rem;
-        height: 40rem; } }
+        height: auto; } }
   .section1-quienes__bloque {
     margin-top: 10rem; }
+    @media screen and (max-width: 425px) {
+      .section1-quienes__bloque {
+        width: 20rem;
+        margin-top: 5rem;
+        margin-left: 4rem;
+        overflow: hidden; } }
+    @media screen and (max-width: 768px) {
+      .section1-quienes__bloque {
+        width: 40rem;
+        margin-top: 5rem;
+        overflow: hidden; } }
   .section1-quienes__texto {
     text-align: justify;
     color: #252526;
@@ -674,8 +678,7 @@ body {
         width: 40rem;
         text-align: justify;
         font-size: 2rem;
-        position: relative;
-        margin: 5rem; } }
+        position: relative; } }
   .section1-quienes__titulo {
     margin-bottom: 2rem;
     font-size: 2.5rem;
@@ -687,36 +690,65 @@ body {
     @media screen and (max-width: 768px) {
       .section1-quienes__titulo {
         position: relative;
-        margin: 0 0 0 3rem; } }
+        font-size: 2rem; } }
   .section1-quienes__circulo {
     position: absolute;
     margin: 0 0 10rem 40rem;
     width: 30rem;
     height: auto; }
-    @media screen and (max-width: 425px) {
-      .section1-quienes__circulo {
-        margin: 35rem 0; } }
     @media screen and (max-width: 768px) {
       .section1-quienes__circulo {
-        margin: 45rem 0; } }
+        width: 40rem;
+        margin: 50rem 2rem 0 0; } }
+  @media screen and (max-width: 425px) {
+    .section1-quienes__ingresar {
+      margin-left: 5rem;
+      width: 22rem;
+      height: 5rem;
+      font-size: 2rem;
+      margin-top: 8rem; } }
   @media screen and (max-width: 768px) {
     .section1-quienes__ingresar {
-      margin-left: 0rem;
-      width: 20rem;
+      width: 15rem;
       height: 5rem;
-      font-size: 2rem; } }
+      font-size: 2rem;
+      margin-top: 8rem; } }
 
 .section2-importancia {
   height: auto;
   background-color: #ffef9b;
   border: solid #ffef9b; }
+  @media screen and (max-width: 425px) {
+    .section2-importancia {
+      width: 22.5rem;
+      margin: 0; } }
+  @media screen and (max-width: 768px) {
+    .section2-importancia {
+      width: 46.5rem;
+      margin: 0;
+      overflow: hidden; } }
   .section2-importancia__bloque {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5rem; }
+    @media screen and (max-width: 425px) {
+      .section2-importancia__bloque {
+        display: flex;
+        flex-direction: column; } }
+    @media screen and (max-width: 768px) {
+      .section2-importancia__bloque {
+        display: flex;
+        flex-direction: column; } }
   .section2-importancia__bloque1 {
     margin: 5rem; }
+    @media screen and (max-width: 425px) {
+      .section2-importancia__bloque1 {
+        margin: 0; } }
+    @media screen and (max-width: 768px) {
+      .section2-importancia__bloque1 {
+        margin: 0;
+        padding: 1rem; } }
   .section2-importancia__titulo {
     font-size: 2.5rem;
     font-weight: 800;
@@ -725,58 +757,38 @@ body {
   .section2-importancia__imagen {
     height: auto;
     width: 100%; }
+    @media screen and (max-width: 425px) {
+      .section2-importancia__imagen {
+        width: 30rem;
+        margin-left: 6rem; } }
+    @media screen and (max-width: 768px) {
+      .section2-importancia__imagen {
+        width: 40rem;
+        margin-left: 6rem;
+        margin-top: 5rem; } }
   .section2-importancia__ingresar {
     margin-left: 15rem; }
+    @media screen and (max-width: 768px) {
+      .section2-importancia__ingresar {
+        width: 15rem;
+        height: 5rem;
+        font-size: 2rem;
+        margin-top: 6rem; } }
   .section2-importancia__texto {
     width: 40rem;
     text-align: justify; }
-  @media screen and (max-width: 768px) {
-    .section2-importancia__bloque {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap; }
-    .section2-importancia__imagen {
-      width: 80%; } }
-  @media screen and (max-width: 425px) {
-    .section2-importancia__bloque {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap; }
-    .section2-importancia__texto {
-      width: 60%;
-      text-align: justify;
-      font-size: 3rem; }
-    .section2-importancia__titulo {
-      font-size: 4rem;
-      width: 60%;
-      line-height: 5rem; }
-    .section2-importancia__imagen {
-      width: 70%; }
-    .section2-importancia__ingresar {
-      margin-left: 0rem;
-      width: 20rem;
-      height: 5rem;
-      font-size: 2rem; } }
-  @media screen and (max-width: 768px) {
-    .section2-importancia__bloque {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap; }
-    .section2-importancia__texto {
-      width: 60%;
-      text-align: justify;
-      font-size: 3rem; }
-    .section2-importancia__titulo {
-      font-size: 4rem;
-      width: 60%;
-      line-height: 5rem; }
-    .section2-importancia__imagen {
-      width: 60%; }
-    .section2-importancia__ingresar {
-      margin-left: 0rem;
-      width: 20rem;
-      height: 5rem;
-      font-size: 2rem; } }
+    @media screen and (max-width: 425px) {
+      .section2-importancia__texto {
+        width: 40rem;
+        text-align: justify;
+        font-size: 2rem;
+        position: relative; } }
+    @media screen and (max-width: 768px) {
+      .section2-importancia__texto {
+        width: 45rem;
+        text-align: justify;
+        font-size: 2rem;
+        position: relative; } }
 
 .section3-quienes {
   margin: 3rem;
@@ -790,22 +802,21 @@ body {
       flex-direction: column;
       height: auto;
       width: 54rem;
-      border: solid red; } }
+      margin: 0; } }
   @media screen and (max-width: 768px) {
     .section3-quienes {
       display: flex;
       flex-direction: column;
-      height: auto; } }
+      height: auto;
+      width: 46.5rem;
+      margin: 0; } }
   .section3-quienes__imagen {
     margin: 2rem 0 0;
     width: 30rem;
     height: auto; }
     @media screen and (max-width: 425px) {
       .section3-quienes__imagen {
-        margin: 5rem 0 5rem 20rem; } }
-    @media screen and (max-width: 768px) {
-      .section3-quienes__imagen {
-        margin: 5rem 0 5rem 20rem; } }
+        margin-left: 7rem; } }
   .section3-quienes__bloque {
     margin-top: 10rem; }
   .section3-quienes__texto {
@@ -815,11 +826,10 @@ body {
     position: sticky; }
     @media screen and (max-width: 768px) {
       .section3-quienes__texto {
-        width: 40rem;
+        width: 45rem;
         text-align: justify;
         font-size: 2rem;
-        position: relative;
-        margin: 5rem; } }
+        position: relative; } }
   .section3-quienes__titulo {
     margin-bottom: 2rem;
     font-size: 2.5rem;
@@ -830,8 +840,7 @@ body {
     position: sticky; }
     @media screen and (max-width: 768px) {
       .section3-quienes__titulo {
-        position: relative;
-        margin: 0 0 0 3rem; } }
+        position: relative; } }
   .section3-quienes__circulo {
     position: absolute;
     margin: 0 0 10rem 45rem;
@@ -869,8 +878,8 @@ body {
     .services {
       display: flex;
       flex-direction: column;
-      margin-left: 5rem;
-      width: 40rem; } }
+      width: 40rem;
+      margin: 0; } }
   .services__titulo {
     color: #252526;
     margin: 15rem 0 0 10rem;
@@ -878,6 +887,12 @@ body {
     font-weight: 800;
     line-height: 3.125rem;
     color: #252526; }
+    @media screen and (max-width: 425px) {
+      .services__titulo {
+        margin: 0; } }
+    @media screen and (max-width: 768px) {
+      .services__titulo {
+        margin: 0; } }
   .services__imagen {
     height: 25rem;
     margin-left: 5rem; }
