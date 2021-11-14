@@ -134,6 +134,10 @@ body {
 .section1-gif {
   background-color: #222222;
   margin-top: .2rem; }
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    .section1-gif {
+      padding-top: 10rem;
+      height: 35rem; } }
   @media screen and (max-width: 768px) and (min-width: 768px) {
     .section1-gif {
       height: 30rem; } }
@@ -227,9 +231,6 @@ body {
 .section3-testimonios {
   height: auto;
   background-color: #9a93a7; }
-  @media screen and (max-width: 425px) and (min-width: 320px) {
-    .section3-testimonios {
-      width: 100%; } }
   .section3-testimonios__titulo {
     font-size: 2.5rem;
     font-weight: 800;
@@ -241,8 +242,9 @@ body {
     margin-left: 20rem; }
     @media screen and (max-width: 425px) and (min-width: 320px) {
       .section3-testimonios .carousel {
-        width: 80%;
-        margin: 0; } }
+        width: 85%;
+        margin: 0;
+        padding: 0 0 2rem 2rem; } }
     @media screen and (max-width: 768px) and (min-width: 768px) {
       .section3-testimonios .carousel {
         margin-left: 0;
@@ -257,8 +259,10 @@ body {
   margin: 1rem; }
   @media screen and (max-width: 425px) and (min-width: 320px) {
     .section4-wrapper__wrapper {
-      width: 17rem;
-      overflow: hidden; } }
+      overflow: hidden;
+      margin: 0;
+      right: 3rem;
+      width: 100%; } }
   @media screen and (max-width: 768px) and (min-width: 768px) {
     .section4-wrapper__wrapper {
       width: 22rem;
@@ -276,7 +280,9 @@ body {
   margin-top: 10rem; }
   @media screen and (max-width: 425px) and (min-width: 320px) {
     .section4-wrapper .typing-demo {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      margin: 5rem 0 0 4rem;
+      height: 1.5rem; } }
   @media screen and (max-width: 768px) and (min-width: 768px) {
     .section4-wrapper .typing-demo {
       width: 100%;
@@ -298,7 +304,9 @@ body {
   margin-top: 10rem; }
   @media screen and (max-width: 425px) and (min-width: 320px) {
     .section4-wrapper .rounded {
-      width: 13rem; } }
+      width: 13rem;
+      right: 2rem;
+      padding-left: 2rem; } }
   @media screen and (max-width: 768px) and (min-width: 768px) {
     .section4-wrapper .rounded {
       width: 13rem;
@@ -314,51 +322,100 @@ body {
   @media screen and (max-width: 425px) and (min-width: 320px) {
     .section1-Acerca {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      width: 22rem; } }
   @media screen and (max-width: 768px) and (min-width: 768px) {
     .section1-Acerca {
-      display: flex;
-      flex-direction: column; } }
+      width: 70.2rem;
+      margin: 0; } }
   .section1-Acerca__imagen {
     height: 20rem;
     width: auto;
     margin: 10rem 0 0 0; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1-Acerca__imagen {
+        width: 20rem;
+        height: auto;
+        margin-top: 0;
+        margin-left: 2rem; } }
     @media screen and (max-width: 768px) and (min-width: 768px) {
       .section1-Acerca__imagen {
-        width: 10rem; } }
-  .section1-Acerca__bloque {
-    margin: 10rem 0 0 3rem;
-    text-align: justify;
-    color: #252526;
-    width: 40rem; }
-    @media screen and (max-width: 425px) and (min-width: 320px) {
-      .section1-Acerca__bloque {
-        width: 40rem; } }
+        width: 40rem;
+        height: auto; } }
   .section1-Acerca__circulo {
     position: absolute;
     margin: 0 5rem 15rem 0rem;
     width: 35rem;
     height: auto; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1-Acerca__circulo {
+        width: 20rem;
+        margin: 0; } }
   .section1-Acerca__ingresar {
     margin-left: 31rem; }
     @media screen and (max-width: 425px) and (min-width: 320px) {
       .section1-Acerca__ingresar {
-        margin-left: 30rem; } }
+        margin: 0; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section1-Acerca__ingresar {
+        margin: 1rem 0 0 0; } }
   .section1-Acerca__bloque {
     position: sticky;
-    margin: 5rem 0 5rem 3rem; }
+    margin: 5rem 0 5rem 3rem;
+    text-align: justify;
+    color: #252526;
+    width: 40rem; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1-Acerca__bloque {
+        margin: 1rem;
+        width: 21rem; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section1-Acerca__bloque {
+        width: 25rem;
+        margin: 3rem; } }
+  .section1-Acerca__titulo {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3.125rem;
+    letter-spacing: 0;
+    width: 45rem;
+    position: sticky; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1-Acerca__titulo {
+        width: 90%;
+        font-size: 1.5rem; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section1-Acerca__titulo {
+        width: 25rem;
+        font-size: 1.5rem; } }
   .section1-Acerca__texto {
     text-align: justify;
     color: #252526;
     width: 40rem; }
     @media screen and (max-width: 425px) and (min-width: 320px) {
       .section1-Acerca__texto {
-        font-size: 3rem; } }
+        margin: 0;
+        font-size: 1rem;
+        width: 90%; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section1-Acerca__texto {
+        width: 25rem;
+        text-align: justify;
+        font-size: 1rem;
+        margin: 0;
+        position: relative; } }
 
 .section2-significado {
   height: auto;
   background-color: #a6f1bd;
   border: solid #a6f1bd; }
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    .section2-significado {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #a6f1bd; } }
   .section2-significado__bloque {
     display: flex;
     flex-direction: row-reverse;
@@ -367,23 +424,72 @@ body {
     @media screen and (max-width: 425px) and (min-width: 320px) {
       .section2-significado__bloque {
         display: flex;
-        flex-direction: column; } }
+        flex-direction: column;
+        width: 22rem; } }
   .section2-significado__bloque1 {
     margin: 5rem; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section2-significado__bloque1 {
+        margin: 0;
+        padding: 1rem;
+        width: 22rem; } }
   .section2-significado__titulo {
+    margin-bottom: 2rem;
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 3.125rem;
-    color: #252526; }
+    letter-spacing: 0;
+    width: 45rem;
+    position: sticky; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section2-significado__titulo {
+        width: 20rem;
+        font-size: 1.5rem;
+        margin: 5%; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section2-significado__titulo {
+        position: relative;
+        font-size: 2rem;
+        width: 18rem; } }
   .section2-significado__imagen {
     margin-top: 5rem;
     height: 20rem;
     width: auto; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section2-significado__imagen {
+        width: 25rem;
+        height: auto; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section2-significado__imagen {
+        width: 40rem;
+        margin-left: 1rem;
+        margin-top: 15rem; } }
   .section2-significado__ingresar {
     margin-left: 15rem; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section2-significado__ingresar {
+        position: absolute;
+        height: 2rem;
+        font-size: .8rem;
+        margin: 5%; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section2-significado__ingresar {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        position: absolute; } }
   .section2-significado__texto {
     width: 40rem;
     text-align: justify; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section2-significado__texto {
+        font-size: 1rem;
+        width: 20rem; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section2-significado__texto {
+        width: 21rem; } }
 
 .section3-atencion {
   display: flex;
@@ -392,21 +498,53 @@ body {
   @media screen and (max-width: 425px) and (min-width: 320px) {
     .section3-atencion {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      width: 22rem; } }
+  @media screen and (max-width: 768px) and (min-width: 768px) {
+    .section3-atencion {
+      width: 70.2rem;
+      margin: 0; } }
   .section3-atencion__titulo {
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 3.125rem;
     color: #252526; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section3-atencion__titulo {
+        width: 90%;
+        font-size: 1.5rem; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section3-atencion__titulo {
+        width: 25rem;
+        font-size: 1.5rem; } }
   .section3-atencion__imagen {
     height: 30rem;
     width: auto; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section3-atencion__imagen {
+        height: 20rem;
+        margin: 4rem; } }
   .section3-atencion__ingresar {
     margin-left: 15rem; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section3-atencion__ingresar {
+        margin: 0; } }
   .section3-atencion__parrafo {
     position: sticky;
     margin: 10rem;
     width: 40rem; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section3-atencion__parrafo {
+        margin: 1rem;
+        font-size: 1rem;
+        width: 90%; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section3-atencion__parrafo {
+        width: 25rem;
+        text-align: justify;
+        font-size: 1.5rem;
+        margin: 0;
+        position: relative; } }
   .section3-atencion__circulo {
     position: absolute; }
 

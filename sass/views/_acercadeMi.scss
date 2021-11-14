@@ -10,11 +10,12 @@
   @include movil {
     display: flex;
     flex-direction: column;
+    width: 22rem;
   }
 
   @include tablet {
-    display: flex;
-    flex-direction: column;
+    width: 70.2rem;
+    margin: 0;
   }
 
     &__imagen {
@@ -22,21 +23,18 @@
     width: auto;
     margin: 10rem 0 0 0;
 
+    @include movil {
+      width: 20rem;
+      height: auto;
+      margin-top: 0;
+      margin-left: 2rem;
+    }
+  
     @include tablet {
-      width: 10rem;
-    }
-
-    }
-
-    &__bloque {
-    margin: 10rem 0 0 3rem;
-    text-align: justify;
-    color: $colorletra;
-    width: 40rem;
-
-    @include movil{
       width: 40rem;
+      height: auto;
     }
+
     }
 
     &__circulo {
@@ -44,34 +42,96 @@
       margin: 0 5rem 15rem 0rem;
       width: 35rem;
       height: auto;
+
+      @include movil{
+        width: 20rem;
+        margin: 0;
+      }
+  
     }
+
     &__ingresar{
       margin-left: 31rem;
 
       @include movil{
-       margin-left: 30rem;
+       margin: 0;
+      }
+
+      @include tablet{
+        margin: 1rem 0 0 0;
       }
     } 
+
     &__bloque {
       position: sticky;
       margin: 5rem 0 5rem 3rem;
+      text-align: justify;
+      color: $colorletra;
+      width: 40rem;
+
+      @include movil {
+        margin: 1rem;
+        width: 21rem;
+      }
+  
+      @include tablet{
+        width: 25rem;
+        margin: 3rem;
+      }
     }
+
+    &__titulo{
+    margin-bottom: 2rem;
+    font-size: $titulo;
+    font-weight: 800;
+    line-height: 3.125rem;
+    letter-spacing: 0;
+    width: 45rem;
+    position: sticky;
+  
+      @include movil {
+        width: 90%;
+        font-size: 1.5rem;
+      }
+  
+      @include tablet {
+        width: 25rem;
+        font-size: 1.5rem;
+      }
+    }
+
     &__texto {
       text-align: justify;
       color: $colorletra;
       width: 40rem;
+
       @include movil {
-        font-size: 3rem;
+        margin: 0;
+        font-size: 1rem;
+        width: 90%;
+      }
+  
+      @include tablet {
+        width: 25rem;
+        text-align: justify;
+        font-size: 1rem;
+        margin: 0;
+        position: relative;
       }
     }
-
-  }
-
+}
   
-  .section2-significado {
-    height: auto;
+.section2-significado {
+height: auto;
+background-color: $verde;
+border: solid $verde;
+
+  @include movil {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background-color: $verde;
-    border: solid $verde;
+  }
 
     &__bloque{
       display: flex;
@@ -82,36 +142,91 @@
       @include movil {
         display: flex;
         flex-direction: column;
+        width: 22rem;
       }
     }
 
     &__bloque1{
       margin: 5rem;
-      @include movil {
 
+      @include movil{
+        margin: 0;
+        padding: 1rem;
+        width: 22rem;
       }
     }
 
     &__titulo{
-      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-size: $titulo;
       font-weight: 800;
       line-height: 3.125rem;
-      color: $colorletra;
+      letter-spacing: 0;
+      width: 45rem;
+      position: sticky;
+      
+      @include movil{
+        width: 20rem;
+        font-size: 1.5rem;
+        margin: 5%;
+      }
+
+      @include tablet {
+        position: relative;
+        font-size: 2rem;
+        width: 18rem;
+      }
     }
 
     &__imagen{
       margin-top: 5rem;
       height: 20rem;
       width: auto;
+
+      @include movil {
+        width: 25rem;
+        height: auto;
+      }
+    
+      @include tablet {
+        width: 40rem;
+        margin-left: 1rem;
+        margin-top: 15rem;
+      }
     }
 
     &__ingresar{
       margin-left: 15rem;
+
+      @include movil {
+        position: absolute;
+        height: 2rem;
+        font-size: .8rem;
+        margin: 5%;
+      }
+  
+      @include tablet {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-left: 5rem;
+        position: absolute;
+      }
     }
 
     &__texto{
       width: 40rem;
       text-align: justify;
+
+      @include movil {
+        font-size: 1rem;
+        width: 20rem;
+      }
+  
+      @include tablet {
+      width: 21rem;
+      }
     }
 }
 
@@ -123,6 +238,12 @@
   @include movil {
     display: flex;
     flex-direction: column;
+    width: 22rem;
+  }
+
+  @include tablet {
+    width: 70.2rem;
+    margin: 0;
   }
 
   &__titulo{
@@ -130,21 +251,54 @@
     font-weight: 800;
     line-height: 3.125rem;
     color: $colorletra;
+
+    @include movil {
+      width: 90%;
+      font-size: 1.5rem;
+    }
+
+    @include tablet {
+      width: 25rem;
+      font-size: 1.5rem;
+    }
   }
 
   &__imagen{
     height: 30rem;
     width: auto;
+
+    @include movil{
+      height: 20rem;
+      margin: 4rem;
+    }
   }
 
   &__ingresar{
     margin-left: 15rem;
+
+    @include movil{
+      margin: 0;
+     }
   }
 
   &__parrafo{
     position: sticky;
     margin: 10rem;
     width: 40rem;
+
+    @include movil {
+      margin: 1rem;
+      font-size: 1rem;
+      width: 90%;
+    }
+
+    @include tablet {
+      width: 25rem;
+      text-align: justify;
+      font-size: 1.5rem;
+      margin: 0;
+      position: relative;
+    }
   }
 
   &__circulo {

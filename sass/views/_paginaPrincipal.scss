@@ -27,9 +27,15 @@
         background-color: #222222; 
         margin-top: .2rem;
         
+        @include movil{
+          padding-top: 10rem;
+          height: 35rem;
+        }
+
         @include tablet {
           height: 30rem;
         }
+        
 
         &__imagen{
           object-fit: cover;
@@ -135,12 +141,7 @@
         height: auto;
         background-color: $violeta;
         
-
-        @include movil {
-          width: 100%;
-        }
-
-        &__titulo {
+             &__titulo {
         font-size: 2.5rem;
         font-weight: 800;
         line-height: 3.125rem;
@@ -153,8 +154,9 @@
             margin-left: 20rem;
 
             @include movil {
-              width: 80%;
-              margin: 0;         
+              width: 85%;
+              margin: 0; 
+              padding: 0 0 2rem 2rem;        
             }
             @include tablet {
               margin-left: 0;
@@ -174,8 +176,10 @@
         margin: 1rem;
         
         @include movil {
-          width: 17rem;
           overflow: hidden;
+          margin: 0;
+          right: 3rem;
+          width: 100%;
         }
 
         @include tablet {
@@ -197,7 +201,10 @@
 
             @include movil{
               font-size: 1rem;
+              margin: 5rem 0 0 4rem;
+              height: 1.5rem;
             }
+
             @include tablet {
                 width: 100%;
                 font-size: 1.5rem;
@@ -224,7 +231,8 @@
 
             @include movil{
               width: 13rem;
-
+              right: 2rem;
+              padding-left: 2rem;
             }
 
             @include tablet {
