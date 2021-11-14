@@ -266,10 +266,11 @@ border: solid $verde;
   &__imagen{
     height: 30rem;
     width: auto;
+    margin: 4rem;
 
     @include movil{
       height: 20rem;
-      margin: 4rem;
+      margin: 5rem;
     }
   }
 
@@ -283,8 +284,8 @@ border: solid $verde;
 
   &__parrafo{
     position: sticky;
-    margin: 10rem;
-    width: 40rem;
+    margin: 8rem;
+    width: 30rem;
 
     @include movil {
       margin: 1rem;

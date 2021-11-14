@@ -122,8 +122,7 @@
       margin-top: 1rem;
       margin-left: 5rem;
       position: absolute;
-    }
-      
+    } 
   }
     
 }
@@ -141,9 +140,6 @@
     background-color: $amarillo;
   }
   
-  @include tablet {
-    border: solid blue;
-  }
   
   &__bloque{
     display: flex;
@@ -167,7 +163,7 @@
 
     @include tablet{
       margin: 0;
-      padding: 1rem;
+      padding: 4rem;
     }
   }
 
@@ -220,7 +216,7 @@
     }
   
     @include tablet {
-      width: 17rem;
+      width: 30rem;
       margin-left: 1rem;
       margin-top: 5rem;
     }
@@ -274,7 +270,7 @@
   }
 
   @include tablet {
-    width: 20rem;
+    width: 30rem;
     margin-left: 2rem;
   }
  }
@@ -382,7 +378,6 @@
   
   @include tablet {
    margin: 10rem;
-  border: solid blue;
   }
 
 }
