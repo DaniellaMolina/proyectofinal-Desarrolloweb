@@ -675,7 +675,7 @@ body {
     font-weight: 700;
     color: #252526; }
   .section1__ingresar .span1 {
-    margin-left: 18rem; }
+    margin-left: 30rem; }
     @media screen and (max-width: 425px) and (min-width: 320px) {
       .section1__ingresar .span1 {
         margin-left: 3rem; } }
