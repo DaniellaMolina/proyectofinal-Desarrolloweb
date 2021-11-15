@@ -7,6 +7,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   color: $colorfondo;
+
+  @include movil {
+    width: 26.5625rem;
+    height: auto;
+    overflow: hidden;
+  }
   
   &__div{
     background-color: $celeste;
@@ -14,31 +20,79 @@
     width: 30rem;
     height: 30rem;
     margin: 10rem 0rem 0rem 4rem;
+
+    @include movil {
+      margin: 0;
+      width: 20rem;
+      height: 20rem;
+      margin: 2rem 0 3rem 2rem;
+    }
   }
 
   &__imagen {
   height: auto;
   width: 20rem;
   margin: 5rem;
+
+  @include movil {
+    margin: 0;
+  }
 }
+
   &__formulario {
     margin: 10rem;
     background-color: $celeste;
-    height: 40rem;
+    height: 53rem;
     width: 30rem;
-    border-radius: 10%;    
+    border-radius: 10%;   
+    
+    @include movil {
+      width: 26.5rem;
+      margin: 0;
+      height: 55rem;
+    }
+    
 }
 
 .inputcaja {
     color: $colorletra;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+#nombre {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 2rem;
+}
+
+#apellido{
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 2rem;
+}
+
+#celular{
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 2rem;
+}
+
+#email{
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 2rem;
 }
 
 .textarea {
-    margin-left: 0.75rem;
-    height: 12.5rem;
+    margin: 2rem;
+    height: 10rem;
     width: 26.25rem;
     border-radius: 5%;
+
+    @include movil {
+      width: 24rem;
+      margin: 1rem;
+    }
 }
 
 .tituloContacto {
@@ -47,31 +101,29 @@
 }
 
 .recaptcha {
-    margin-left: 0.75rem;
+    margin-left: 2rem;
 }
 
 .g-recaptcha {
     margin-bottom: 0.9375rem;
 }
 
-@include tablet {
-    .section1-contacto {
-    display: flex;
-    flex-direction: column;
-    }
-}
 
 .reset {
-  height: 2rem;
+  height: 3rem;
   width: 5rem;
   margin-left: 2rem;
-  background-color: $colorfondo;
+  background-color: $colorletra;
+  color: $colorfondo;
+  border-radius: 30%;
 }
 
 .enviar {
-  height: 2rem;
+  height: 3rem;
   width: 5rem;
   margin-left: 2rem;
-  background-color: $colorfondo;
+  background-color: $colorletra;
+  color: $colorfondo;
+  border-radius: 30%;
 }
 }

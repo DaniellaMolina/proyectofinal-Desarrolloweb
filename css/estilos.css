@@ -65,6 +65,9 @@ footer {
   position: block;
   text-align: center;
   background-color: #F2F2F2; }
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    .footer {
+      width: 100%; } }
   .footer__redeSociales {
     background-color: #252526; }
   .footer__imagen {
@@ -555,54 +558,96 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   color: #F2F2F2; }
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    .section1-contacto {
+      width: 26.5625rem;
+      height: auto;
+      overflow: hidden; } }
   .section1-contacto__div {
     background-color: #c6f3ff;
     border-radius: 50%;
     width: 30rem;
     height: 30rem;
     margin: 10rem 0rem 0rem 4rem; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1-contacto__div {
+        margin: 0;
+        width: 20rem;
+        height: 20rem;
+        margin: 2rem 0 3rem 2rem; } }
   .section1-contacto__imagen {
     height: auto;
     width: 20rem;
     margin: 5rem; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1-contacto__imagen {
+        margin: 0; } }
   .section1-contacto__formulario {
     margin: 10rem;
     background-color: #c6f3ff;
-    height: 40rem;
+    height: 53rem;
     width: 30rem;
     border-radius: 10%; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1-contacto__formulario {
+        width: 26.5rem;
+        margin: 0;
+        height: 55rem; } }
   .section1-contacto .inputcaja {
     color: #252526;
-    padding: 1rem; }
+    padding: 0 1rem 0 1rem; }
+  .section1-contacto #nombre {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 2rem; }
+  .section1-contacto #apellido {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 2rem; }
+  .section1-contacto #celular {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 2rem; }
+  .section1-contacto #email {
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 2rem; }
   .section1-contacto .textarea {
-    margin-left: 0.75rem;
-    height: 12.5rem;
+    margin: 2rem;
+    height: 10rem;
     width: 26.25rem;
     border-radius: 5%; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1-contacto .textarea {
+        width: 24rem;
+        margin: 1rem; } }
   .section1-contacto .tituloContacto {
     margin-left: 25%;
     color: #252526; }
   .section1-contacto .recaptcha {
-    margin-left: 0.75rem; }
+    margin-left: 2rem; }
   .section1-contacto .g-recaptcha {
     margin-bottom: 0.9375rem; }
-  @media screen and (max-width: 768px) and (min-width: 768px) {
-    .section1-contacto .section1-contacto {
-      display: flex;
-      flex-direction: column; } }
   .section1-contacto .reset {
-    height: 2rem;
+    height: 3rem;
     width: 5rem;
     margin-left: 2rem;
-    background-color: #F2F2F2; }
+    background-color: #252526;
+    color: #F2F2F2;
+    border-radius: 30%; }
   .section1-contacto .enviar {
-    height: 2rem;
+    height: 3rem;
     width: 5rem;
     margin-left: 2rem;
-    background-color: #F2F2F2; }
+    background-color: #252526;
+    color: #F2F2F2;
+    border-radius: 30%; }
 
 .section1__ingresar {
   margin-top: 8rem; }
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    .section1__ingresar {
+      width: 26.5625rem; } }
   .section1__ingresar a {
     cursor: pointer;
     transition: all 200ms linear; }
@@ -628,8 +673,17 @@ body {
   .section1__ingresar h6 span {
     text-transform: uppercase;
     font-weight: 700;
-    color: #252526;
-    margin-left: 30%; }
+    color: #252526; }
+  .section1__ingresar .span1 {
+    margin-left: 18rem; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1__ingresar .span1 {
+        margin-left: 3rem; } }
+  .section1__ingresar .span2 {
+    margin-left: 15rem; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1__ingresar .span2 {
+        margin-left: 10rem; } }
   .section1__ingresar .section {
     position: relative;
     width: 100%;
@@ -688,6 +742,10 @@ body {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: all 600ms ease-out; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1__ingresar .card-3d-wrapper {
+        width: 25rem;
+        margin-left: 1rem; } }
   .section1__ingresar .card-front,
   .section1__ingresar .card-back {
     width: 100%;
@@ -1219,7 +1277,9 @@ body {
     .section1-como {
       display: flex;
       flex-direction: column;
-      margin: 0; } }
+      margin: 0;
+      width: 26.5625rem;
+      overflow: hidden; } }
   @media screen and (max-width: 768px) and (min-width: 768px) {
     .section1-como {
       width: 70.2rem;
@@ -1231,21 +1291,29 @@ body {
     width: 40rem; }
     @media screen and (max-width: 425px) and (min-width: 320px) {
       .section1-como__texto {
+        margin: 1.5rem;
         font-size: 1rem;
-        width: 90%;
-        margin-left: 1.5rem; } }
+        width: 90%; } }
     @media screen and (max-width: 768px) and (min-width: 768px) {
       .section1-como__texto {
-        width: 30rem;
+        width: 25rem;
         text-align: justify;
-        font-size: 1rem;
-        padding: 2rem;
+        font-size: 1.5rem;
+        margin: 0;
         position: relative; } }
   .section1-como__titulo {
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 3.125rem;
     color: #252526; }
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+      .section1-como__titulo {
+        width: 90%;
+        font-size: 1.5rem; } }
+    @media screen and (max-width: 768px) and (min-width: 768px) {
+      .section1-como__titulo {
+        width: 25rem;
+        font-size: 1.5rem; } }
   .section1-como__imagen {
     margin: 2rem 0 0 2rem;
     width: 30rem;
@@ -1254,7 +1322,7 @@ body {
       .section1-como__imagen {
         width: 20rem;
         height: auto;
-        margin-left: 1rem; } }
+        margin-left: 3rem; } }
     @media screen and (max-width: 768px) and (min-width: 768px) {
       .section1-como__imagen {
         margin-left: 2rem;
@@ -1348,6 +1416,10 @@ body {
         font-size: 1rem;
         margin: 0;
         position: relative; } }
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .section3-card {
+    overflow: hidden; } }
 
 .section3-card__cubos {
   background: #F2F2F2;

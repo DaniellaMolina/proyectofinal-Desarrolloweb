@@ -4,7 +4,10 @@
       position: block;
       text-align: center;
       background-color: $colorfondo;
-     
+
+      @include movil {
+        width: 100%;
+      }
         
         &__redeSociales {
            background-color: $colorletra;
