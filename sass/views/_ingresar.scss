@@ -2,8 +2,10 @@
 
 .section1__ingresar {  
       margin-top: 8rem;
+      
     @include movil {
         width: 26.5625rem;
+        border: solid rebeccapurple;
     }
         a {
         cursor: pointer;
@@ -131,7 +133,7 @@
             transition: all 600ms ease-out;
 
             @include movil {
-                width: 25rem;
+                width: 24rem;
                 margin-left: 1rem;
             }
         }
