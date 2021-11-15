@@ -10,9 +10,7 @@ justify-content: space-between;
 @include movil {
   display: flex;
   flex-direction: column;
-  width: 22.5rem;
-  margin-left: 2rem; 
-  margin-top: 0;
+  margin: 0;
 }
 
 @include tablet {
@@ -28,7 +26,7 @@ justify-content: space-between;
 
   @include movil {
     font-size: 1rem;
-    width: 100%;
+    width: 90%;
     margin-left: 1.5rem;
   }
 
@@ -102,22 +100,25 @@ justify-content: space-between;
       @include movil {
         display: flex;
         flex-direction: column;
-        width: 100%;
       }
   
       @include tablet{
         display: flex;
         flex-direction: row;
         margin: 0;
-        width: 22.5rem;
       }
     }
 
     &__bloque1{
       margin: 5rem;
 
+      @include movil {
+        margin: 0;
+        padding: 2rem;
+      }
+
       @include tablet {
-        margin: 1;
+        margin: 1rem;
       }
     }
 
@@ -144,7 +145,6 @@ justify-content: space-between;
 
       @include movil {
         width: 30rem;
-     
       }
     
       @include tablet {
@@ -170,7 +170,8 @@ justify-content: space-between;
       @include movil {
         margin: 0;
         font-size: 1rem;
-        width: 100%;
+        width: 20rem;
+        padding: 1rem;
       }
   
       @include tablet {
@@ -197,8 +198,6 @@ justify-content: space-between;
 
     @include movil {
       height: auto;
-      width: 21rem;
-      margin: 1rem;
     }
 
     @include tablet {
@@ -250,6 +249,7 @@ justify-content: space-between;
         height: 100%;
         transform: rotateY(-180deg);
     }
+
     &:hover {
         >.front {
             transform: rotateY(180deg);
@@ -284,7 +284,7 @@ justify-content: space-between;
 
     @include movil {
       width: 18.75rem;
-      margin-left: 4rem;
+      height: auto;
     }
    
     >.front,
@@ -294,7 +294,7 @@ justify-content: space-between;
       width: inherit;
       background-size: cover!important;
       background-position: center!important;
-      height: 320px;
+      height: 20rem;
       padding: 1em 2em;
       background: $rojo;
       border-radius: 10px;
@@ -303,6 +303,10 @@ justify-content: space-between;
         font-size:1rem;
         line-height: 160%;
         color: $colorletra;
+
+        @include movil{
+          font-size: .8rem;
+        }
       }
     }
 }

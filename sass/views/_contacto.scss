@@ -1,11 +1,77 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 
-  .section1-contacto {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      color: $celeste;
+.section1-contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: $colorfondo;
+  
+  &__div{
+    background-color: $celeste;
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    margin: 10rem 0rem 0rem 4rem;
   }
 
+  &__imagen {
+  height: auto;
+  width: 20rem;
+  margin: 5rem;
+}
+  &__formulario {
+    margin: 10rem;
+    background-color: $celeste;
+    height: 40rem;
+    width: 30rem;
+    border-radius: 10%;    
+}
+
+.inputcaja {
+    color: $colorletra;
+    padding: 1rem;
+}
+
+.textarea {
+    margin-left: 0.75rem;
+    height: 12.5rem;
+    width: 26.25rem;
+    border-radius: 5%;
+}
+
+.tituloContacto {
+    margin-left: 25%;
+    color: $colorletra;
+}
+
+.recaptcha {
+    margin-left: 0.75rem;
+}
+
+.g-recaptcha {
+    margin-bottom: 0.9375rem;
+}
+
+@include tablet {
+    .section1-contacto {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+.reset {
+  height: 2rem;
+  width: 5rem;
+  margin-left: 2rem;
+  background-color: $colorfondo;
+}
+
+.enviar {
+  height: 2rem;
+  width: 5rem;
+  margin-left: 2rem;
+  background-color: $colorfondo;
+}
+}
