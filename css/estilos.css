@@ -644,8 +644,7 @@ body {
   margin-top: 8rem; }
   @media screen and (max-width: 425px) and (min-width: 320px) {
     .section1__ingresar {
-      width: 26.5625rem;
-      border: solid rebeccapurple; } }
+      width: 26.5625rem; } }
   .section1__ingresar a {
     cursor: pointer;
     transition: all 200ms linear; }
@@ -742,8 +741,8 @@ body {
     transition: all 600ms ease-out; }
     @media screen and (max-width: 425px) and (min-width: 320px) {
       .section1__ingresar .card-3d-wrapper {
-        width: 24rem;
-        margin-left: 1rem; } }
+        width: 23rem;
+        margin-left: 1.5rem; } }
   .section1__ingresar .card-front,
   .section1__ingresar .card-back {
     width: 100%;
